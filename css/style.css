@@ -18,7 +18,7 @@ body {
     pointer-events: none;
 }
 
-.round-indicator.hidden {
+.hidden {
     display: none;
 }
 
