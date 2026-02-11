@@ -1,10 +1,12 @@
-FROM nginx:alpine
+FROM busybox:latest
+ENV PORT=8080
 
-COPY default.conf.template /etc/nginx/templates/default.conf.template
+copy ./www /www
 
-# Copy website files
-COPY . /usr/share/nginx/html
+HEALTHCHECK CMD nc -z localhost $PORT
 
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+# Get secret defined in nais console named JESPER_SIN_GMAPS_API_KEY and write it to .env file in www
+# This will be executed when the container starts, allowing the secret to be injected at runtime
+CMD echo "httpd started" && \
+    echo "$JESPER_SIN_GMAPS_API_KEY" > /www/.env && \
+    trap "exit 0;" TERM INT; httpd -v -p $PORT -h /www -f & wait
