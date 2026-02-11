@@ -20,4 +20,4 @@ spec:
       cpu: 50m
       memory: 128Mi
   envFrom:
-    - secret: ukens-hjernetrim-secrets
+    - secret: helseytelser-ukens-hjernetrim
