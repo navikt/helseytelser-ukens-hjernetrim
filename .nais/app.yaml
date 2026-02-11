@@ -21,3 +21,6 @@ spec:
       memory: 128Mi
   envFrom:
     - secret: helseytelser-ukens-hjernetrim
+  filesFrom:
+    - secret: helseytelser-ukens-hjernetrim
+      mountPath: /usr/share/nginx/html/
