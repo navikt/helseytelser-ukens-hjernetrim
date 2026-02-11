@@ -266,10 +266,8 @@ function updateRoundIndicator() {
     roundIndicator.classList.remove("hidden");
 }
 
-function initialize() { // Initialize
 
-
-
+async function initialize() { // Initialize
 
     map = new google.maps.Map(document.getElementById("map"), { // Initialize map
         center: pointOfOrigin,
@@ -507,9 +505,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-function loadGoogleScript() {
+async function loadGoogleScript() {
     const script = document.createElement('script');
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${getGoogleMapsApiKey()}&libraries=places,geometry&callback=initialize&v=weekly`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${await getGoogleMapsApiKey()}&libraries=places,geometry&callback=initialize&v=weekly`;
     script.defer = true;
     document.head.appendChild(script);
 }

@@ -1,0 +1,23 @@
+apiVersion: nais.io/v1alpha1
+kind: Application
+metadata:
+  name: helseytelser-ukens-hjernetrim
+  namespace: helsearbeidsgiver
+  labels:
+    team: helsearbeidsgiver
+spec:
+  image: {{ image }}
+  port: 80
+  ingresses:
+    - https://helseytelser-ukens-hjernetrim.ekstern.dev.nav.no
+  replicas:
+    min: 1
+    max: 1
+  resources:
+    limits:
+      memory: 256Mi
+    requests:
+      cpu: 50m
+      memory: 128Mi
+  envFrom:
+    - secret: ukens-hjernetrim-secrets
