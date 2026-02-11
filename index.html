@@ -42,7 +42,7 @@
         </div>
         <div class="modal-body" id="introductionModalCenterText">
           Klar for en liten utfordring i Oslo?  <br>
-          Denne aktiviteten er ment å gjennomføres sammen med teamet.<br>
+          Denne aktiviteten er ment å gjennomføres sammen med teamet eller gruppen.<br>
           <br>
           Vi har plukket ut 5 steder i Oslo, og det er din oppgave å gjette hvor de er ved å sette en markør på kartet. <br>
           Jo nærmere du er, jo flere poeng får du!<br>Maks 5000 poeng per sted.<br>
@@ -94,9 +94,9 @@
       <p id="totalScoreText">Total poengsum: 0</p>
       <label for="teamNameInput">Teamets navn</label>
       <input id="teamNameInput" type="text" placeholder="Ditt navn" />
-      <button id="generateSlackBtn" class="button-1 end-screen-btn">Generer Slack-melding</button>
-      <label for="slackOutput">Kopier og lim inn i Slack kanalen #helseytelser-ukens-hjernetrim</label>
-      <textarea id="slackOutput" rows="8" readonly></textarea>
+      <button id="generateSlackBtn" class="button-1 end-screen-btn">Lag Slack-melding</button>
+      <label class="hidden" for="slackOutput" id="slackInfoKopier">Kopier og lim inn i Slack kanalen #helseytelser-ukens-hjernetrim</label>
+      <textarea class="hidden" id="slackOutput" rows="8" readonly></textarea>
       <br/>
       <p style="color: #8b8b8b;">Nettside laget av Helseytelser sin sosiale komité 😊</p>
     </div>

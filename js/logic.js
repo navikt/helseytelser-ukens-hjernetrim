@@ -376,6 +376,9 @@ function generateSlackMessage() {
     const slackOutput = document.getElementById("slackOutput");
     const name = teamNameInput.value.trim() || "Anonym";
     const totalScore = roundScores.reduce((sum, value) => sum + value, 0);
+    slackOutput.classList.remove("hidden");
+    document.getElementById("slackInfoKopier").classList.remove("hidden");
+    
 
     const lines = [];
     lines.push(name + " poeng for Oslo steder (uke 7)");
