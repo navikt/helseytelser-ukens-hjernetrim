@@ -371,6 +371,7 @@ function showEndScreen() {
 }
 
 function generateSlackMessage() {
+    console.log("Generating Slack message...");
     const teamNameInput = document.getElementById("teamNameInput");
     const slackOutput = document.getElementById("slackOutput");
     const name = teamNameInput.value.trim() || "Anonym";
