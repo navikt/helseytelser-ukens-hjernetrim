@@ -381,12 +381,13 @@ function generateSlackMessage() {
     document.getElementById("slackInfoKopier").classList.remove("hidden");
 
     const lines = [];
-    lines.push(name + " poeng for Oslo steder (uke 7)");
+    lines.push("Team: " + name);
     for (let i = 0; i < locations.length; i++) {
         const score = roundScores[i] !== undefined ? roundScores[i] : 0;
         lines.push(getScoreEmoji(score) + (i + 1) + ": " + score);
     }
     lines.push("Totalt: " + totalScore);
+    lines.push("Uke 7 - Oslo steder");
 
     slackOutput.value = lines.join("\n");
 }
