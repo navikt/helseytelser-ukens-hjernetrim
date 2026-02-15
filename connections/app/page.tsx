@@ -23,6 +23,13 @@ import { examples } from "~/lib/examples";
 
 /* eslint-disable react-hooks/exhaustive-deps */
 
+function formatDuration(ms: number) {
+  const totalSeconds = Math.max(0, Math.floor(ms / 1000));
+  const minutes = Math.floor(totalSeconds / 60);
+  const seconds = totalSeconds % 60;
+  return `${minutes}m ${seconds.toString().padStart(2, "0")}s`;
+}
+
 export default function Page() {
   const params = useSearchParams();
   const [mistakesAnimateRef] = useAutoAnimate();
@@ -37,6 +44,10 @@ export default function Page() {
   const [shakingWords, setShakingWords] = useState<string[]>([]);
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [teamName, setTeamName] = useState("");
+  const [guessTimestamps, setGuessTimestamps] = useState<number[]>([]);
+  const [timerStart, setTimerStart] = useState<number | null>(null);
+  const [currentDuration, setCurrentDuration] = useState(0);
+  const [timerStoppedAt, setTimerStoppedAt] = useState<number | null>(null);
   
 
   useEffect(() => {
@@ -70,6 +81,18 @@ export default function Page() {
   const submitDisabled =
     selectedWords.length !== 4 ||
     guesses.some((guess) => hasSameElements(guess, selectedWords));
+  const averageGuessIntervalMs =
+    guessTimestamps.length > 1
+      ?
+          (guessTimestamps[guessTimestamps.length - 1] -
+            guessTimestamps[0]) /
+          (guessTimestamps.length - 1)
+      : 0;
+  const formattedAverageGuessInterval = formatDuration(averageGuessIntervalMs);
+  const formattedTimerDuration =
+    timerStart !== null
+      ? formatDuration(timerStoppedAt ?? currentDuration)
+      : formatDuration(0);
 
   // Handle revealing answers after losing
   useEffect(() => {
@@ -81,9 +104,32 @@ export default function Page() {
     }
   }, [lostGame, revealAnswers]);
 
+  useEffect(() => {
+    if (timerStart === null || timerStoppedAt !== null) return;
+
+    const interval = setInterval(() => {
+      setCurrentDuration(Date.now() - timerStart);
+    }, 1000);
+
+    return () => clearInterval(interval);
+  }, [timerStart, timerStoppedAt]);
+
+  useEffect(() => {
+    if (
+      (wonGame || lostGame) &&
+      guessTimestamps.length > 0 &&
+      timerStart !== null &&
+      timerStoppedAt === null
+    ) {
+      const lastGuessTime = guessTimestamps[guessTimestamps.length - 1];
+      setTimerStoppedAt(lastGuessTime - timerStart);
+      setCurrentDuration(lastGuessTime - timerStart);
+    }
+  }, [wonGame, lostGame, guessTimestamps, timerStart, timerStoppedAt]);
+
   // Generate emoji results from guesses
   const generateEmojiResults = () => {
-    const colorEmojis = ['🟪', '🟦', '🟩', '🟨'];
+    const colorEmojis = ['🟨', '🟩', '🟦', '🟪'];
     return guesses.map((guess) => {
       return guess.map((word) => {
         const colorIndex = getColor(gameOptions!, word);
@@ -92,7 +138,16 @@ export default function Page() {
     }).join('\n');
   };
 
-  const resultsText = `Team: ${teamName || '---'}\n${generateEmojiResults()}\nKoblinger (uke 8)`;
+  const emojiResults = generateEmojiResults();
+  const statsSummary = `Snitt mellom gjetting: ${formattedAverageGuessInterval}\nAntall feil: ${totalMistakes}`;
+  const resultsText = [
+    `Team: ${teamName || "---"}`,
+    emojiResults,
+    statsSummary,
+    "Koblinger (uke 8)",
+  ]
+    .filter((section) => section !== "")
+    .join("\n");
 
   // ensure that gameOptions won't be undefined
   if (gameOptions === undefined) {
@@ -197,15 +252,21 @@ export default function Page() {
         )}
       </div>
 
-      {/* display the mistakes that the user has left */}
-      <div
-        className="flex items-center gap-2 place-self-center sm:place-self-auto"
-        ref={mistakesAnimateRef}
-      >
-        <p>Gjenværende feil:</p>
-        {range(remainingMistakes).map((_, i) => (
-          <span className="h-4 w-4 rounded-full bg-stone-600" key={i}></span>
-        ))}
+      <div className="flex w-full flex-wrap items-center justify-between gap-4">
+        {/* display the mistakes that the user has left */}
+        <div className="flex items-center gap-2" ref={mistakesAnimateRef}>
+          <p>Gjenværende feil:</p>
+          {range(remainingMistakes).map((_, i) => (
+            <span className="h-4 w-4 rounded-full bg-stone-600" key={i}></span>
+          ))}
+        </div>
+
+        {timerStart !== null && (
+          <div className="flex items-center gap-2 opacity-30">
+            <p>Tid brukt:</p>
+            <span className="font-mono">{formattedTimerDuration}</span>
+          </div>
+        )}
       </div>
 
       {!wonGame && !lostGame ? (
@@ -229,6 +290,14 @@ export default function Page() {
             variant={submitDisabled ? undefined : "filled"}
             disabled={submitDisabled}
             onClick={async () => {
+              const guessTime = Date.now();
+
+              if (timerStart === null) {
+                setTimerStart(guessTime);
+                setCurrentDuration(0);
+                setTimerStoppedAt(null);
+              }
+
               // First, animate each selected word bouncing sequentially
               const wordsInOrder = wordPool.filter(word => selectedWords.includes(word));
               
@@ -257,6 +326,7 @@ export default function Page() {
 
                 await new Promise((res) => setTimeout(res, 500));
                 setGuesses([...guesses, selectedWords]);
+                setGuessTimestamps((prev) => [...prev, guessTime]);
                 setSelectedWords([]);
                 setWordPool((pool) =>
                   pool.filter((word) => !selectedWords.includes(word)),
@@ -276,6 +346,7 @@ export default function Page() {
                 }
 
                 setGuesses([...guesses, selectedWords]);
+                setGuessTimestamps((prev) => [...prev, guessTime]);
                 setSelectedWords([]);
               }
             }}
@@ -292,7 +363,7 @@ export default function Page() {
         </div>
       ) : lostGame ? (
         <div className="flex flex-col gap-4 items-center">
-          <p>{!revealAnswers ? "Lykke til neste gang. Del i #helseytelser-ukens-hjernetrim (kanskje for vanskelig?)" : ""}</p>
+          <p>Lykke til neste gang! Kanskje det var for vanskelig? Del gjerne :)</p>
           {revealAnswers && (
             <CircularButton variant="filled" onClick={() => setIsShareModalOpen(true)}>
               Del dine resultat
@@ -307,6 +378,8 @@ export default function Page() {
         teamName={teamName}
         onTeamNameChange={setTeamName}
         resultsText={resultsText}
+        averageGuessInterval={formattedAverageGuessInterval}
+        totalMistakes={totalMistakes}
       />
     </main>
   );

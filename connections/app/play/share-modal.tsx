@@ -7,6 +7,8 @@ interface ShareModalProps {
   teamName: string;
   onTeamNameChange: (name: string) => void;
   resultsText: string;
+  averageGuessInterval: string;
+  totalMistakes: number;
 }
 
 export function ShareModal({
@@ -15,6 +17,8 @@ export function ShareModal({
   teamName,
   onTeamNameChange,
   resultsText,
+  averageGuessInterval,
+  totalMistakes,
 }: ShareModalProps) {
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 
@@ -63,9 +67,11 @@ export function ShareModal({
             rows={8}
             className="px-3 py-2 border border-stone-300 rounded-md font-mono text-sm focus:outline-none focus:ring-2 focus:ring-stone-900 resize-none"
           />
-           <div className="flex flex-col gap-2">
+          <div className="flex flex-col gap-1 text-sm text-stone-600">
+            <p>Snitt mellom gjetting: {averageGuessInterval}</p>
+            <p>Antall feil: {totalMistakes}</p>
+          </div>
           <p>Husk å del i #helseytelser-ukens-hjernetrim 😊</p>
-        </div>
         </div>
 
         <div className="flex gap-3 justify-end">

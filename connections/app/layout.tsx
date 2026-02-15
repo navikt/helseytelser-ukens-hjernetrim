@@ -16,19 +16,13 @@ export default function Layout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body className="mx-auto flex max-w-screen-md flex-col gap-4 bg-stone-50 p-4 text-stone-900 sm:p-8">
         <header className="flex items-center gap-10 pt-[80px]">
-          {/* <Link href="/" className="shrink-0">
-            <img
-              src="/logo-1024.png"
-              alt="Custom Connections Logo"
-              className="h-12 w-12"
-            />
-          </Link> */}
+         
           
           <div>
             
-            <h1 className="text-2xl font-bold">Helseytelser ukens hjernetrim</h1>
+            <h1 className="text-2xl font-bold inline-flex items-center gap-2"><img src="./norway-flag.png" alt="Norway flag" className="h-6 w-auto inline-block" /> Helseytelser ukens hjernetrim</h1>
             
-            <p>Grupper 4 ord som deler en felles tråd.</p>
+            <p>Lag 4 grupper av 4 ord som deler en felles tråd!</p>
           </div>
 
           <div className="ml-auto">
