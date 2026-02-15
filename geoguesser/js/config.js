@@ -15,3 +15,4 @@ async function getEnv(){
     console.log("LOADED:" + content);
     return content;
 }
+

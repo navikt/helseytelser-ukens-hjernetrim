@@ -237,6 +237,13 @@ function setMapToCityBounds() {
     map.fitBounds(bounds);
 }
 
+function getGameRoundIndex() {
+    const cookie = document.cookie.split('; ').find(row => row.startsWith('game_round_index='));
+    const gameRoundIndex = cookie ? parseInt(cookie.split('=')[1]) : null;
+    console.log("COOKIE:", gameRoundIndex);
+    return gameRoundIndex
+}
+
 function startRound(roundIndex) {
     if (roundIndex >= locations.length) {
         showEndScreen();
