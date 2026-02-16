@@ -71,7 +71,7 @@ export function ShareModal({
             <p>Snitt mellom gjetting: {averageGuessInterval}</p>
             <p>Antall feil: {totalMistakes}</p>
           </div>
-          <p>Husk å del i #helseytelser-ukens-hjernetrim 😊</p>
+          <p>Husk å del i thead på #helseytelser-ukens-hjernetrim 😊</p>
         </div>
 
         <div className="flex gap-3 justify-end">

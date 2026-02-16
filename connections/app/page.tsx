@@ -141,7 +141,7 @@ export default function Page() {
   const emojiResults = generateEmojiResults();
   const statsSummary = `Snitt mellom gjetting: ${formattedAverageGuessInterval}\nAntall feil: ${totalMistakes}`;
   const resultsText = [
-    `Team: ${teamName || "---"}`,
+    `Deltaker: ${teamName || "---"}`,
     emojiResults,
     statsSummary,
     "Koblinger (uke 8)",
