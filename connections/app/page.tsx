@@ -51,27 +51,31 @@ export default function Page() {
   
 
   useEffect(() => {
-    // if (!params.has("options")) return;
-
     try {
-      // const decoded = JSON.parse(atob(params.get("options")!));
-      // const options = gameOptionsSchema.parse(decoded);
-      // console.info("setting game options from URL", options);
-
       const options = examples[0];
 
       for (let i = 0; i < 4; i++) {
         options.words[i].sort(alphabetical);
       }
 
-      console.info("setting game options from URL", options);
+      // Load saved guesses from localStorage
+      const savedGuesses = localStorage.getItem("connections-guesses");
+      const loadedGuesses = savedGuesses ? JSON.parse(savedGuesses) : [];
 
       setGameOptions(options);
-      setWordPool(regenerateWordPool(options, guesses));
+      setGuesses(loadedGuesses);
+      setWordPool(regenerateWordPool(options, loadedGuesses));
     } catch {
-      console.error("could not parse game options from URL");
+      console.error("could not initialize game");
     }
   }, []);
+
+  // Save guesses to localStorage when they change
+  useEffect(() => {
+    if (guesses.length > 0) {
+      localStorage.setItem("connections-guesses", JSON.stringify(guesses));
+    }
+  }, [guesses]);
 
   // derived state - must be calculated before hooks
   const totalMistakes = gameOptions ? getTotalMistakes(gameOptions, guesses) : 0;

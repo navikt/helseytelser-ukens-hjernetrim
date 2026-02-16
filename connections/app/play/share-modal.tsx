@@ -43,7 +43,7 @@ export function ShareModal({
 
         <div className="flex flex-col gap-2">
           <label htmlFor="team-name" className="font-medium">
-            Team navn:
+            Navn:
           </label>
           <input
             id="team-name"
@@ -51,7 +51,7 @@ export function ShareModal({
             value={teamName}
             onChange={(e) => onTeamNameChange(e.target.value)}
             className="px-3 py-2 border border-stone-300 rounded-md focus:outline-none focus:ring-2 focus:ring-stone-900"
-            placeholder="Skriv ditt teamnavn her"
+            placeholder="Skriv navn her"
           />
         </div>
 
