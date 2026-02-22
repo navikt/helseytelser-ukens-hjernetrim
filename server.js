@@ -19,13 +19,16 @@ app.use("/uke/:key", (req, res, next) => {
   const key = "2026-" + req.params.key;
   const weekPath = weeks[key];
 
-  if (!weekPath) return res.status(404).end();
+  if (!weekPath || weekPath === undefined) {
+    return res.sendFile('missing.html', { root: __dirname });
+  }
 
   const index = getGameRoundIndex(weeks, key);
   res.setHeader('Set-Cookie', `game_round_index=${index}`);
   console.log(`Serving week ${key} with index ${index} from path ${weekPath}`);
   express.static(weekPath)(req, res, next);
 });
+
 
 // Redirect root to current week
 app.get("/", (req, res) => {
