@@ -20,7 +20,7 @@ app.use("/uke/:key", (req, res, next) => {
   const weekPath = weeks[key];
 
   if (!weekPath || weekPath === undefined) {
-    return res.sendFile('missing.html', { root: __dirname });
+    return express.static('./missing')(req, res, next);
   }
 
   const index = getGameRoundIndex(weeks, key);
