@@ -5,19 +5,49 @@ let targetMarker;
 let allowMarkerSet = true;
 let dottedLine;
 let sv;
-let pointOfOrigin = { lat: 64.6, lng: 11.0 };
+let pointOfOrigin = { lat:  59.9121746, lng: 10.7312704 };
 let currentRoundIndex = 0;
 let currentTargetLatLng = null;
 let roundScores = [];
-let currentGameLocations = [];
-let roundTimerInterval = null;
-let roundTimeLeftSeconds = 300;
-let gameStarted = false;
-let warningTriggered = false;
 
-const ROUNDS_PER_GAME = 5;
-const ROUND_TIME_SECONDS = 5*60;
-const DEFAULT_MAP_ZOOM = 5;
+const locations = [
+    {
+        latLng: { lat: 59.912281370398006, lng: 10.798321603497167 },
+        shortDescription: "Ved Nav kontoret",
+        description: "Nav kontor",
+        pano: "yvcT8_sH41gHhru0mSCWww",
+        JG: "//maps.google.com/maps/contrib/113056659489150386159"
+    },
+    {
+        latLng: { lat: 59.91194460907636, lng: 10.733586435215393 },
+        shortDescription: "Oslo City Hall",
+        description: "Oslo City Hall",
+        pano: "CAoSF0NJSE0wb2dLRUlDQWdJQzZyNTJvZ2dF",
+        JG: "//maps.google.com/maps/contrib/110288797455515018625"
+    },
+    {
+        latLng: { lat: 59.9369779, lng: 10.736941   },
+        shortDescription: "Oslo University Hospital Ullevål",
+        description: "Oslo University Hospital Ullevål",
+        pano: "2Cqh4Z4InxpqrptrGot3Pg",
+        JG: "//maps.google.com/maps/place/Oslo+University+Hospital+Ullev%C3%A5l"
+    },
+        {
+        latLng: { lat: 59.929076829851866, lng: 10.748562506091226 },
+        shortDescription: "Ilatrappen",
+        description: "Ilatrappen",
+        pano: "CAoSF0NJSE0wb2dLRUlDQWdJRFVrdlNEendF",
+        JG: "//maps.google.com/maps/contrib/115385471507152016857"
+    },
+    {
+        latLng: { lat: 59.92376601915641, lng: 10.753547463485237 },
+        shortDescription: "Ahmad Syed Ijlal",
+        description: "Vann ved grunerlookaa",
+        pano: "CAoSFkNJSE0wb2dLRUlDQWdJRHE3ZnFMRnc.",
+        JG: "//maps.google.com/maps/contrib/110785428595926066679"
+    },
+
+];
 
 const MAX_SCORE = 5000;
 const MAX_DISTANCE_KM = 4;
@@ -172,118 +202,12 @@ function getCityCornerCoordinates(centerPoint) { // Get city corner coordinates 
 }
 
 function calculateScore(distanceKm) {
-    if (distanceKm < 0.1) {
+    if (distanceKm < 0.03) {
         return MAX_SCORE;
     }
-
-    // Norway is ~1800km long, so MAX_DISTANCE_KM should be ~800-1000
-    // Using exponential decay so you still get decent points for being in the right region
-    // < 10 km  → ~4900+
-    // ~ 50 km  → ~4000
-    // ~100 km  → ~3200
-    // ~200 km  → ~2000
-    // ~500 km  → ~500
-    // ~800 km+ → ~0
-    const score = MAX_SCORE * Math.exp(-distanceKm / 200);
+    const clampedDistance = Math.min(distanceKm, MAX_DISTANCE_KM);
+    const score = MAX_SCORE * (1 - clampedDistance / MAX_DISTANCE_KM);
     return Math.max(0, Math.round(score));
-}
-function formatRoundTime(totalSeconds) {
-    const minutes = Math.floor(totalSeconds / 60);
-    const seconds = totalSeconds % 60;
-    return minutes + ":" + String(seconds).padStart(2, "0");
-}
-
-function updateRoundTimerUI() {
-    const roundTimer = document.getElementById("roundTimer");
-    const timerBar = document.getElementById("timerBar");
-
-    if (roundTimer) {
-        roundTimer.textContent = formatRoundTime(roundTimeLeftSeconds);
-    }
-
-    if (timerBar) {
-        const percentage = (roundTimeLeftSeconds / ROUND_TIME_SECONDS) * 100;
-        timerBar.style.width = percentage + "%";
-    }
-}
-
-function setRoundTimerVisibility(isVisible) {
-    const roundTimer = document.getElementById("roundTimer");
-    const timerBarContainer = document.getElementById("timerBarContainer");
-
-    if (roundTimer) {
-        roundTimer.classList.toggle("hidden", !isVisible);
-    }
-
-    if (timerBarContainer) {
-        timerBarContainer.classList.toggle("hidden", !isVisible);
-    }
-
-    if (!isVisible) {
-        setWarningVignetteVisible(false);
-    }
-}
-
-function setWarningVignetteVisible(isVisible) {
-    const vignette = document.getElementById("warningVignette");
-    if (vignette) {
-        vignette.classList.toggle("active", isVisible);
-    }
-}
-
-function clearRoundTimer() {
-    if (roundTimerInterval) {
-        clearInterval(roundTimerInterval);
-        roundTimerInterval = null;
-    }
-}
-
-function handleRoundTimeout() {
-    if (!allowMarkerSet) {
-        return;
-    }
-
-    allowMarkerSet = false;
-    roundScores[currentRoundIndex] = 0;
-
-    const isLastRound = currentRoundIndex === currentGameLocations.length - 1;
-    document.getElementById("guessBtn").innerHTML = isLastRound ? "Ferdig" : "Neste runde";
-
-    const resultModalCenterTitle = document.getElementById("resultModalCenterTitle");
-    const resultModalCenterText = document.getElementById("resultModalCenterText");
-    resultModalCenterTitle.innerHTML = "Tiden er ute!";
-    resultModalCenterText.innerHTML = "Du fikk 0 poeng i denne runden.";
-    $('#resultModalCenter').modal('show');
-}
-
-function startRoundTimer() {
-    clearRoundTimer();
-    roundTimeLeftSeconds = ROUND_TIME_SECONDS;
-    warningTriggered = false;
-    setWarningVignetteVisible(false);
-    setRoundTimerVisibility(true);
-    updateRoundTimerUI();
-
-    roundTimerInterval = setInterval(() => {
-        roundTimeLeftSeconds -= 1;
-
-        if (roundTimeLeftSeconds <= 0) {
-            roundTimeLeftSeconds = 0;
-            updateRoundTimerUI();
-            clearRoundTimer();
-            handleRoundTimeout();
-            return;
-        }
-
-        if (roundTimeLeftSeconds <= 60 && !warningTriggered) {
-            warningTriggered = true;
-            setWarningVignetteVisible(true);
-            const warningSound = new Audio("data/warning.mp3");
-            warningSound.play();
-        }
-
-        updateRoundTimerUI();
-    }, 1000);
 }
 
 function resetRoundState() {
@@ -304,36 +228,24 @@ function resetRoundState() {
 
 function setMapToCityBounds() {
     map.panTo(pointOfOrigin);
-    map.setZoom(DEFAULT_MAP_ZOOM);
+    map.setZoom(14);
+
+    const cornerCoordinates = getCityCornerCoordinates(pointOfOrigin);
+    const bounds = new google.maps.LatLngBounds();
+    bounds.extend(cornerCoordinates.northEast);
+    bounds.extend(cornerCoordinates.southWest);
+    map.fitBounds(bounds);
 }
 
 function getGameRoundIndex() {
     const cookie = document.cookie.split('; ').find(row => row.startsWith('game_round_index='));
-    const parsed = cookie ? parseInt(cookie.split('=')[1], 10) : 0;
-    const gameRoundIndex = Number.isNaN(parsed) ? 0 : parsed;
+    const gameRoundIndex = cookie ? parseInt(cookie.split('=')[1]) : null;
     console.log("COOKIE:", gameRoundIndex);
     return gameRoundIndex
 }
 
-async function loadGameLocations() {
-    const response = await fetch('data/locations.json', { cache: 'no-store' });
-    if (!response.ok) {
-        throw new Error('Failed to load locations.json');
-    }
-
-    const allLocations = await response.json();
-    const gameRoundIndex = getGameRoundIndex();
-    const startOffset = gameRoundIndex * ROUNDS_PER_GAME;
-    const endOffset = startOffset + ROUNDS_PER_GAME;
-    currentGameLocations = allLocations.slice(startOffset, endOffset);
-
-    if (currentGameLocations.length === 0) {
-        currentGameLocations = allLocations.slice(0, ROUNDS_PER_GAME);
-    }
-}
-
 function startRound(roundIndex) {
-    if (roundIndex >= currentGameLocations.length) {
+    if (roundIndex >= locations.length) {
         showEndScreen();
         return;
     }
@@ -343,16 +255,12 @@ function startRound(roundIndex) {
     resetRoundState();
     setMapToCityBounds();
 
-    const location = currentGameLocations[roundIndex];
+    const location = locations[roundIndex];
     currentTargetLatLng = location.latLng;
 
     processSVData(location)
 
     document.getElementById("guessBtn").innerHTML = "Gjett!";
-
-    if (gameStarted) {
-        startRoundTimer();
-    }
 }
 
 function updateRoundIndicator() {
@@ -370,7 +278,7 @@ async function initialize() { // Initialize
 
     map = new google.maps.Map(document.getElementById("map"), { // Initialize map
         center: pointOfOrigin,
-        zoom: DEFAULT_MAP_ZOOM,
+        zoom: 14,
         streetViewControl: false,
         mapId: 'd4fe02c4af5e4ff6',
         mapTypeId: google.maps.MapTypeId.SATELLITE,
@@ -378,7 +286,7 @@ async function initialize() { // Initialize
         disableDefaultUI: true
     });
 
-    google.maps.event.addListenerOnce(map, 'idle', async function () {
+    google.maps.event.addListenerOnce(map, 'idle', function () {
         sv = new google.maps.StreetViewService();
 
         panorama = new google.maps.StreetViewPanorama(
@@ -399,13 +307,9 @@ async function initialize() { // Initialize
             if (!pos) return;
             const lat = pos.lat();
             const lng = pos.lng();
-            const panoId = panorama.getPano();
             currentTargetLatLng = { lat, lng };
-            console.log("[PANO] Moved to — Pano ID:", panoId, "| Lat/Lng:", lat, lng);
-            console.log("[PANO] Location entry:", JSON.stringify({ latLng: { lat, lng }, pano: panoId }));
         });
 
-        await loadGameLocations();
         startRound(0);
     });
 
@@ -452,12 +356,11 @@ function processSVData(location) { // Process street view data
     };
 
     panorama.setPano(location.pano);
-    const heading = location.heading ?? 287;
-    const pitch = location.pitch ?? 0;
+    const heading = 287;
 
     panorama.setPov({
         heading: heading,
-        pitch: pitch,
+        pitch: 0,
     });
     panorama.setVisible(true);
 }
@@ -471,9 +374,6 @@ function showEndScreen() {
     if (guessBtn) {
         guessBtn.disabled = true;
     }
-
-    clearRoundTimer();
-    setRoundTimerVisibility(false);
 
     const totalScore = roundScores.reduce((sum, value) => sum + value, 0);
     totalScoreText.innerHTML = "Total poengsum: " + totalScore;
@@ -497,12 +397,12 @@ function generateSlackMessage() {
 
     const lines = [];
     lines.push("Team: " + name);
-    for (let i = 0; i < currentGameLocations.length; i++) {
+    for (let i = 0; i < locations.length; i++) {
         const score = roundScores[i] !== undefined ? roundScores[i] : 0;
         lines.push(getScoreEmoji(score) + (i + 1) + ": " + score);
     }
     lines.push("Totalt: " + totalScore);
-    lines.push("Uke 9 - Nav kontor");
+    lines.push("Uke 7 - Oslo steder");
 
     slackOutput.value = lines.join("\n");
 }
@@ -524,11 +424,6 @@ async function guessBtnClick() { // Guess button click
     let resultModalCenterTitle = document.getElementById("resultModalCenterTitle");
     let resultModalCenterText = document.getElementById("resultModalCenterText");
 
-    if (!allowMarkerSet) { // Start next round
-        startRound(currentRoundIndex + 1);
-        return;
-    }
-
     if (!guessMarker) { // No marker set
         resultModalCenterTitle.innerHTML = "Oisann!";
         resultModalCenterText.innerHTML = "Sett en markør først!";
@@ -536,12 +431,15 @@ async function guessBtnClick() { // Guess button click
         return;
     }
 
+    if (!allowMarkerSet) { // Start next round
+        startRound(currentRoundIndex + 1);
+        return;
+    }
+
     allowMarkerSet = false;
-    clearRoundTimer();
-    setWarningVignetteVisible(false);
     guessMarker.setAnimation(null);
     guessMarker.setDraggable(false);
-    const isLastRound = currentRoundIndex === currentGameLocations.length - 1;
+    const isLastRound = currentRoundIndex === locations.length - 1;
     document.getElementById("guessBtn").innerHTML = isLastRound ? "Ferdig" : "Neste runde";
 
     // Draw target marker
@@ -597,53 +495,128 @@ async function guessBtnClick() { // Guess button click
         guessMarker.getPosition().lng()
     );
     const distanceMeters = Math.round(distance * 1000);
-const distanceKm = Math.round(distance);
-let distanceText;
-if (distance < 1) {
-    distanceText = distanceMeters + " m unna";
-} else {
-    distanceText = distanceKm + " km unna";
-}
-const points = calculateScore(distance);
-roundScores[currentRoundIndex] = points;
-resultModalCenterText.innerHTML = "Du var " + distanceText + ". Du fikk " + points + " poeng.";
+    const points = calculateScore(distance);
+    roundScores[currentRoundIndex] = points;
 
-if (distance < 10) {
-    resultModalCenterTitle.innerHTML = winPhrases[Math.floor(Math.random() * winPhrases.length)];
-    startConfetti();
-    setTimeout(function () { stopConfetti(); }, 4000);
-} else if (distance < 50) {
-    resultModalCenterTitle.innerHTML = winPhrases[Math.floor(Math.random() * winPhrases.length)];
-    startConfetti();
-    setTimeout(function () { stopConfetti(); }, 3000);
-} else if (distance < 150) {
-    resultModalCenterTitle.innerHTML = closePhrases[Math.floor(Math.random() * closePhrases.length)];
-} else if (distance > 500) {
-    resultModalCenterTitle.innerHTML = veryFarAwayPhrases[Math.floor(Math.random() * veryFarAwayPhrases.length)];
-} else {
-    resultModalCenterTitle.innerHTML = farAwayPhrases[Math.floor(Math.random() * farAwayPhrases.length)];
-}
+    resultModalCenterText.innerHTML = "Du var " + distanceMeters + " m unna. Du fikk " + points + " poeng.";
+    if (distance < 0.05) {
+        resultModalCenterTitle.innerHTML = winPhrases[Math.floor(Math.random() * winPhrases.length)];
+        startConfetti();
+        setTimeout(function () { stopConfetti(); }, 4000);
+    } else if (distance < 0.12) {
+        resultModalCenterTitle.innerHTML = winPhrases[Math.floor(Math.random() * winPhrases.length)];
+        startConfetti();
+        setTimeout(function () { stopConfetti(); }, 3000);
+    } else if (distance < 0.75) {
+        resultModalCenterTitle.innerHTML = closePhrases[Math.floor(Math.random() * closePhrases.length)];
+    } else if (distance > 3.0) {
+        resultModalCenterTitle.innerHTML = veryFarAwayPhrases[Math.floor(Math.random() * veryFarAwayPhrases.length)];
+    } else {
+        resultModalCenterTitle.innerHTML = farAwayPhrases[Math.floor(Math.random() * farAwayPhrases.length)];
+    }
 
     $('#resultModalCenter').modal('show');
 }
 
+// DEV: Remove this function in production
+
+let navData = null;
+
+async function loadNavData() {
+    if (navData) return navData;
+    const response = await fetch('data/nav_data.json');
+    navData = await response.json();
+    return navData;
+}
+
+async function randomLocationBtnClick() {
+    const data = await loadNavData();
+    const keys = Object.keys(data).sort(() => Math.random() - 0.5);
+
+    let found = false;
+
+    for (const key of keys) {
+        if (found) break;
+        const entry = data[key];
+        const targetLat = entry.location.lat;
+        const targetLng = entry.location.lng;
+
+        try {
+            const result = await new Promise((resolve, reject) => {
+                sv.getPanorama(
+                    {
+                        location: { lat: targetLat, lng: targetLng },
+                        radius: 50,
+                        source: google.maps.StreetViewSource.OUTDOOR,
+                        preference: google.maps.StreetViewPreference.NEAREST
+                    },
+                    (result, status) => {
+                        if (status === google.maps.StreetViewStatus.OK) {
+                            resolve(result);
+                        } else {
+                            reject(status);
+                        }
+                    }
+                );
+            });
+
+            const panoLat = result.location.latLng.lat();
+            const panoLng = result.location.latLng.lng();
+            const panoId = result.location.pano;
+
+            const heading = google.maps.geometry.spherical.computeHeading(
+                new google.maps.LatLng(panoLat, panoLng),
+                new google.maps.LatLng(targetLat, targetLng)
+            );
+
+
+
+            panorama.setPano(panoId);
+            panorama.setPov({ heading: heading, pitch: 0 });
+            panorama.setVisible(true);
+
+            map.panTo({ lat: panoLat, lng: panoLng });
+            map.setZoom(16);
+
+            found = true;
+        } catch (e) {
+            // no pano within 50m, try next entry
+        }
+    }
+
+    if (!found) {
+        console.warn("No panorama found within 50m for any NAV office.");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     const generateSlackBtn = document.getElementById("generateSlackBtn");
-    const startGameBtn = document.getElementById("startGameBtn");
     if (generateSlackBtn) {
         generateSlackBtn.addEventListener("click", generateSlackMessage);
     }
 
-    if (startGameBtn) {
-        startGameBtn.addEventListener("click", function () {
-            if (gameStarted) {
-                return;
-            }
+    document.addEventListener("keydown", function (e) {
+        const tag = document.activeElement.tagName.toLowerCase();
+        if (tag === "input" || tag === "textarea") return;
 
-            gameStarted = true;
-            startRoundTimer();
-        });
-    }
+        if (e.key === "n" || e.key === "N") {
+            randomLocationBtnClick();
+        }
+
+        if (e.key === "s" || e.key === "S") {
+            if (!panorama) return;
+            const pos = panorama.getPosition();
+            const pov = panorama.getPov();
+            if (!pos) return;
+            const entry = {
+                latLng: { lat: pos.lat(), lng: pos.lng() },
+                pano: panorama.getPano(),
+                heading: pov.heading,
+                pitch: pov.pitch
+            };
+            console.log(JSON.stringify(entry));
+        }
+    });
 });
 
 async function loadGoogleScript() {

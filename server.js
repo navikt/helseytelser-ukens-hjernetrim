@@ -9,6 +9,7 @@ const hjernetrim = {
 const weeks = {
   "2026-7" : hjernetrim.GEOGUESSER,
   "2026-8" : hjernetrim.CONNECTIONS,
+  "2026-9" : hjernetrim.GEOGUESSER,
 }
 
 const express = require('express');
@@ -64,7 +65,7 @@ function getGameRoundIndex(weeks, key) {
       index++;
     }
   }
-  return index;
+  return index -1;
 }
 
 // Med express kan vi støtte backend teknologi
