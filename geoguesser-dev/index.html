@@ -22,62 +22,10 @@
   <script src="js/config.js"></script>
   <script src="js/confetti.js"></script>
   <script src="js/logic.js" defer></script>
-  <style>
-    .round-timer {
-      position: fixed;
-      top: 44px;
-      left: 16px;
-      z-index: 25000;
-      color: #ffffff;
-      font-size: 16px;
-      font-weight: 700;
-      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
-      pointer-events: none;
-    }
-
-    .timer-bar-container {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 8px;
-      z-index: 25000;
-      background: rgba(255, 255, 255, 0.3);
-      pointer-events: none;
-    }
-
-    .timer-bar {
-      width: 100%;
-      height: 100%;
-      background: #2ea44f;
-      transition: width 1s linear;
-    }
-
-    .warning-vignette {
-      position: fixed;
-      inset: 0;
-      z-index: 24999;
-      pointer-events: none;
-      box-shadow: inset 0 0 120px 60px rgba(200, 0, 0, 0.55);
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
-
-    .warning-vignette.active {
-      opacity: 1;
-      animation: vignette-pulse 1.5s ease-in-out infinite;
-    }
-
-    @keyframes vignette-pulse {
-      0%, 100% { box-shadow: inset 0 0 120px 60px rgba(200, 0, 0, 0.45); }
-      50%       { box-shadow: inset 0 0 160px 80px rgba(200, 0, 0, 0.75); }
-    }
-  </style>
 </head>
 
 <body>
   <div id="roundIndicator" class="round-indicator">Runde 1</div>
-  <div id="roundTimer" class="round-timer hidden">5:00</div>
   <div id="map"></div>
   <div id="pano"></div>
 
@@ -93,22 +41,19 @@
           </button>
         </div>
         <div class="modal-body" id="introductionModalCenterText">
-          Kart gjetting er tilbake, nå med Nav kontorer!  <br>
-          
-          Vi har funnet alle Nav kontorene i Norge og valgt ut 5 tilfeldige.
-          <br><br>
-          Nå er det også en 5 minutter timer hver runde.<br>
-          Flytt rundt som i google maps (maks 5000 poeng per sted)<br>
-          Velg stedet du har flyttet til, ikke der du startet<br>
-          Gjetter du ikke innen tiden er ute, får du 0 poeng for den runden.<br>
+          Klar for en liten utfordring i Oslo?  <br>
+          Denne aktiviteten er ment å gjennomføres sammen med teamet eller gruppen.<br>
+          <br>
+          Vi har plukket ut 5 steder i Oslo, og det er din oppgave å gjette hvor de er ved å sette en markør på kartet. <br>
+          Jo nærmere du er, jo flere poeng får du!<br>Maks 5000 poeng per sted.<br>
           <br>
           
           
           <b>Slik gjør du:</b><br>
-          Trykk for å se rundt i bildet og for å flytte på kartet. Scroll for å zoome inn og ut. Du kan også bevege deg i bilde slik som på google maps<br>
-          1. Du får et Nav kontor og skal gjette hvor du er
+          Trykk for å se rundt i bildet og for å flytte på kartet. Scroll for å zoome inn og ut.<br>
+          1. Du får et sted og skal gjette hvor i Oslo det er
           <br>
-          2. Sett en markør på kartet hvor du tror du er
+          2. Sett en markør på kartet hvor du tror stedet er
           <br>
           3. Trykk på "Gjett!" knappen
           <br><br>
@@ -117,13 +62,16 @@
           
         </div>
         <div class="modal-footer">
-          <button id="startGameBtn" class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Start</button>
+          <button class="btn btn-primary" data-dismiss="modal" aria-hidden="true">Start</button>
         </div>
       </div>
     </div>
   </div>
 
   <button class="button-1" id="guessBtn" onclick="guessBtnClick()">Gjett!</button>
+
+  <!-- DEV: Remove this button in production -->
+  <button class="dev-btn" id="randomLocationBtn" onclick="randomLocationBtnClick()">🎲 Random Location</button>
 
   <!-- Guess Result Modal -->
   <div id="resultModalCenter" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="resultModalCenterTitle"
@@ -147,20 +95,14 @@
     <div class="end-screen-card">
       <h2>Bra spilt!</h2>
       <p id="totalScoreText">Total poengsum: 0</p>
-      <label for="teamNameInput">Skriv navn</label>
-      <input id="teamNameInput" type="text" placeholder="Skriv navn her" />
+      <label for="teamNameInput">Skriv teamets navn</label>
+      <input id="teamNameInput" type="text" placeholder="Skriv teamets navn her" />
       <button id="generateSlackBtn" class="button-1 end-screen-btn">Lag Slack-melding med resultat</button>
       <label class="hidden" for="slackOutput" id="slackInfoKopier">Kopier og lim inn i Slack kanalen #helseytelser-ukens-hjernetrim</label>
       <textarea class="hidden" id="slackOutput" rows="8" readonly></textarea>
       <br/>
       <p style="color: #8b8b8b;">Nettside laget av Helseytelser sin sosiale komité 😊</p>
     </div>
-  </div>
-
-  <div id="warningVignette" class="warning-vignette"></div>
-
-  <div id="timerBarContainer" class="timer-bar-container hidden">
-    <div id="timerBar" class="timer-bar"></div>
   </div>
 </body>
 

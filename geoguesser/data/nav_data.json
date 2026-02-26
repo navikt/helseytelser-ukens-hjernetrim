@@ -1,0 +1,2174 @@
+{
+  "Lister": {
+    "hitString": "KVÅS",
+    "name": "Nav Lister",
+    "geoId": "4225",
+    "enhetNr": "1037",
+    "url": "https://www.nav.no/kontor/nav-lister",
+    "location": {
+      "lat": 58.0954401,
+      "lng": 6.8024726
+    },
+    "formatted_address": "Storgaten 25, 4550 Farsund, Norway"
+  },
+  "Alta-Kvænangen-Loppa": {
+    "hitString": "NUVSVÅG",
+    "name": "Nav Alta-Kvænangen-Loppa",
+    "geoId": "5614",
+    "enhetNr": "2012",
+    "url": "https://www.nav.no/kontor/nav-alta-kvaenangen-loppa",
+    "location": {
+      "lat": 69.9637891,
+      "lng": 23.2711617
+    },
+    "formatted_address": "Bjørn Wirkolas vei 15, 9510 Alta, Norway"
+  },
+  "Levanger": {
+    "hitString": "ÅSEN",
+    "name": "Nav Levanger",
+    "geoId": "5037",
+    "enhetNr": "1719",
+    "url": "https://www.nav.no/kontor/nav-levanger",
+    "location": {
+      "lat": 63.7441413,
+      "lng": 11.2981147
+    },
+    "formatted_address": "Jernbanegata 4, 8, 7600 Levanger, Norway"
+  },
+  "Randaberg-Kvitsøy": {
+    "hitString": "KVITSØY",
+    "name": "Nav Randaberg-Kvitsøy",
+    "geoId": "1144",
+    "enhetNr": "1127",
+    "url": "https://www.nav.no/kontor/nav-randaberg-kvitsoy",
+    "location": {
+      "lat": 58.9988045,
+      "lng": 5.6203058
+    },
+    "formatted_address": "Randabergveien 370, 4070 Randaberg, Norway"
+  },
+  "Hamar": {
+    "hitString": "VANG PÅ HEDMARKEN",
+    "name": "Nav Hamar",
+    "geoId": "3403",
+    "enhetNr": "0403",
+    "url": "https://www.nav.no/kontor/nav-hamar",
+    "location": {
+      "lat": 60.7949911,
+      "lng": 11.0717867
+    },
+    "formatted_address": "Torggata 63, 2317 Hamar, Norway"
+  },
+  "Kragerø": {
+    "hitString": "SKÅTØY",
+    "name": "Nav Kragerø",
+    "geoId": "4014",
+    "enhetNr": "0815",
+    "url": "https://www.nav.no/kontor/nav-kragero",
+    "location": {
+      "lat": 58.86995080000001,
+      "lng": 9.4154844
+    },
+    "formatted_address": "Ytre Strandvei 15, 3770 Kragerø, Norway"
+  },
+  "Bærum": {
+    "hitString": "ØSTERÅS",
+    "name": "Nav Bærum",
+    "geoId": "3201",
+    "enhetNr": "0219",
+    "url": "https://www.nav.no/kontor/nav-baerum",
+    "location": {
+      "lat": 59.89252989999999,
+      "lng": 10.5222085
+    },
+    "formatted_address": "Løkketangen 10, 1337 Sandvika, Norway"
+  },
+  "Midt-Gudbrandsdal": {
+    "hitString": "FÅVANG",
+    "name": "Nav Midt-Gudbrandsdal",
+    "geoId": "3439",
+    "enhetNr": "0516",
+    "url": "https://www.nav.no/kontor/nav-midt-gudbrandsdal",
+    "location": {
+      "lat": 61.5956705,
+      "lng": 9.7478304
+    },
+    "formatted_address": "Nedregata 54, 2640 Vinstra, Norway"
+  },
+  "Kinn": {
+    "hitString": "MÅLØY",
+    "name": "Nav Kinn",
+    "geoId": "4602",
+    "enhetNr": "1401",
+    "url": "https://www.nav.no/kontor/nav-kinn",
+    "location": {
+      "lat": 61.6097923,
+      "lng": 5.1314323
+    },
+    "formatted_address": "Planteskulevegen 65, 6908 Florø, Norway"
+  },
+  "Øksnes": {
+    "hitString": "ALSVÅG",
+    "name": "Nav Øksnes",
+    "geoId": "1868",
+    "enhetNr": "1868",
+    "url": "https://www.nav.no/kontor/nav-oksnes",
+    "location": {
+      "lat": 68.9141075,
+      "lng": 15.0884343
+    },
+    "formatted_address": "Rådhusgata 21, 8430 Myre, Norway"
+  },
+  "Valdres": {
+    "hitString": "SKRAUTVÅL",
+    "name": "Nav Valdres",
+    "geoId": "3451",
+    "enhetNr": "0542",
+    "url": "https://www.nav.no/kontor/nav-valdres",
+    "location": {
+      "lat": 60.98534129999999,
+      "lng": 9.236804300000001
+    },
+    "formatted_address": "Jernbanevegen 22, 2900 Fagernes, Norway"
+  },
+  "Inn-Trøndelag": {
+    "hitString": "SNÅSA",
+    "name": "Nav Inn-Trøndelag",
+    "geoId": "5041",
+    "enhetNr": "1702",
+    "url": "https://www.nav.no/kontor/nav-inn-trondelag",
+    "location": {
+      "lat": 64.0133549,
+      "lng": 11.4951222
+    },
+    "formatted_address": "Ogndalsvegen 2, 7713 Steinkjer, Norway"
+  },
+  "Asker": {
+    "hitString": "BÅTSTØ",
+    "name": "Nav Asker",
+    "geoId": "3203",
+    "enhetNr": "0220",
+    "url": "https://www.nav.no/kontor/nav-asker",
+    "location": {
+      "lat": 59.8337558,
+      "lng": 10.4392416
+    },
+    "formatted_address": "Erteløkka 9, 1384 Asker, Norway"
+  },
+  "Salangen-Lavangen-Dyrøy": {
+    "hitString": "DYRØY",
+    "name": "Nav Salangen-Lavangen-Dyrøy",
+    "geoId": "5528",
+    "enhetNr": "1923",
+    "url": "https://www.nav.no/kontor/nav-salangen-lavangen-dyroy",
+    "location": {
+      "lat": 68.8769342,
+      "lng": 17.8321886
+    },
+    "formatted_address": "Kongsveien 79, 9350 Sjøvegan, Norway"
+  },
+  "Nes i Akershus": {
+    "hitString": "RÅNÅSFOSS",
+    "name": "Nav Nes i Akershus",
+    "geoId": "3228",
+    "enhetNr": "0236",
+    "url": "https://www.nav.no/kontor/nav-nes-i-akershus",
+    "location": {
+      "lat": 60.12431709999999,
+      "lng": 11.4665147
+    },
+    "formatted_address": "Pakkhusgata 1D, 2150 Årnes, Norway"
+  },
+  "Lørenskog": {
+    "hitString": "LØRENSKOG",
+    "name": "Nav Lørenskog",
+    "geoId": "3222",
+    "enhetNr": "0230",
+    "url": "https://www.nav.no/kontor/nav-lorenskog",
+    "location": {
+      "lat": 59.92140499999999,
+      "lng": 10.9540887
+    },
+    "formatted_address": "Skårersletta 61, 1473 Lørenskog, Norway"
+  },
+  "Ørsta-Volda": {
+    "hitString": "ØRSTA",
+    "name": "Nav Ørsta-Volda",
+    "geoId": "1520",
+    "enhetNr": "1520",
+    "url": "https://www.nav.no/kontor/nav-orsta-volda",
+    "location": {
+      "lat": 62.1987845,
+      "lng": 6.1266488
+    },
+    "formatted_address": "Ivar Aasen-gata 10, 6150 Ørsta, Norway"
+  },
+  "Fredrikstad": {
+    "hitString": "KRÅKERØY",
+    "name": "Nav Fredrikstad",
+    "geoId": "3107",
+    "enhetNr": "0106",
+    "url": "https://www.nav.no/kontor/nav-fredrikstad",
+    "location": {
+      "lat": 59.21161610000001,
+      "lng": 10.9292105
+    },
+    "formatted_address": "Jens Wilhelmsens gate 3, 1671 Kråkerøy, Norway"
+  },
+  "Senja-Sørreisa": {
+    "hitString": "FLAKSTADVÅG",
+    "name": "Nav Senja-Sørreisa",
+    "geoId": "5530",
+    "enhetNr": "1931",
+    "url": "https://www.nav.no/kontor/nav-senja-sorreisa",
+    "location": {
+      "lat": 69.22971849999999,
+      "lng": 17.9824423
+    },
+    "formatted_address": "Storgata 18, 9300 Finnsnes, Norway"
+  },
+  "Grimstad": {
+    "hitString": "FEVIK",
+    "name": "Nav Grimstad",
+    "geoId": "4202",
+    "enhetNr": "0904",
+    "url": "https://www.nav.no/kontor/nav-grimstad",
+    "location": {
+      "lat": 58.3390474,
+      "lng": 8.5705496
+    },
+    "formatted_address": "Grøm Næringspark 19, 4887 Grimstad, Norway"
+  },
+  "Nittedal": {
+    "hitString": "SLATTUM",
+    "name": "Nav Nittedal",
+    "geoId": "3232",
+    "enhetNr": "0233",
+    "url": "https://www.nav.no/kontor/nav-nittedal",
+    "location": {
+      "lat": 60.04310150000001,
+      "lng": 10.880966
+    },
+    "formatted_address": "Rådhusveien 3, 1482 Nittedal, Norway"
+  },
+  "Nord-Østerdal": {
+    "hitString": "ØVERSJØDALEN",
+    "name": "Nav Nord-Østerdal",
+    "geoId": "3426",
+    "enhetNr": "0437",
+    "url": "https://www.nav.no/kontor/nav-nord-osterdal",
+    "location": {
+      "lat": 62.27392380000001,
+      "lng": 10.7765953
+    },
+    "formatted_address": "Torvgata 1, 2500 Tynset, Norway"
+  },
+  "Sør-Troms": {
+    "hitString": "ÅNSTAD",
+    "name": "Nav Sør-Troms",
+    "geoId": "5514",
+    "enhetNr": "1903",
+    "url": "https://www.nav.no/kontor/nav-sor-troms",
+    "location": {
+      "lat": 68.7993566,
+      "lng": 16.5405501
+    },
+    "formatted_address": "Asbjørn Selsbanes gate 3, 9405 Harstad, Norway"
+  },
+  "Kongsberg": {
+    "hitString": "HVITTINGFOSS",
+    "name": "Nav Kongsberg",
+    "geoId": "3303",
+    "enhetNr": "0604",
+    "url": "https://www.nav.no/kontor/nav-kongsberg",
+    "location": {
+      "lat": 59.6724572,
+      "lng": 9.647551
+    },
+    "formatted_address": "Kongens gate 12, 3611 Kongsberg, Norway"
+  },
+  "Elverum": {
+    "hitString": "SØRSKOGBYGDA",
+    "name": "Nav Elverum",
+    "geoId": "3420",
+    "enhetNr": "0427",
+    "url": "https://www.nav.no/kontor/nav-elverum",
+    "location": {
+      "lat": 60.8819661,
+      "lng": 11.563765
+    },
+    "formatted_address": "St. Olavs gate 4, 2414 Elverum, Norway"
+  },
+  "Hustadvika": {
+    "hitString": "ELNESVÅGEN",
+    "name": "Nav Hustadvika",
+    "geoId": "1579",
+    "enhetNr": "1548",
+    "url": "https://www.nav.no/kontor/nav-hustadvika",
+    "location": {
+      "lat": 62.8543871,
+      "lng": 7.1624097
+    },
+    "formatted_address": "Torget 1, 3 etg 6440, 6440 Elnesvågen, Norway"
+  },
+  "Sunnfjord og Ytre Sogn": {
+    "hitString": "SØRBØVÅG",
+    "name": "Nav Sunnfjord og Ytre Sogn",
+    "geoId": "4637",
+    "enhetNr": "1432",
+    "url": "https://www.nav.no/kontor/nav-sunnfjord-og-ytre-sogn",
+    "location": {
+      "lat": 61.4502064,
+      "lng": 5.857802299999999
+    },
+    "formatted_address": "Hafstadvegen 42, 6800 Førde, Norway"
+  },
+  "Orkland": {
+    "hitString": "STORÅS",
+    "name": "Nav Orkland",
+    "geoId": "5059",
+    "enhetNr": "1638",
+    "url": "https://www.nav.no/kontor/nav-orkland",
+    "location": {
+      "lat": 63.29960120000001,
+      "lng": 9.843320600000002
+    },
+    "formatted_address": "Allfarveien 5, 7300 Orkanger, Norway"
+  },
+  "Haram": {
+    "hitString": "BRATTVÅG",
+    "name": "Nav Haram",
+    "geoId": "1580",
+    "enhetNr": "1580",
+    "url": "https://www.nav.no/kontor/nav-haram",
+    "location": {
+      "lat": 62.59869429999999,
+      "lng": 6.4449608
+    },
+    "formatted_address": "Brattvåggata 29, 6270 Brattvåg, Norway"
+  },
+  "Sarpsborg": {
+    "hitString": "GRÅLUM",
+    "name": "Nav Sarpsborg",
+    "geoId": "3105",
+    "enhetNr": "0105",
+    "url": "https://www.nav.no/kontor/nav-sarpsborg",
+    "location": {
+      "lat": 59.2808062,
+      "lng": 11.1168375
+    },
+    "formatted_address": "Kirkegata 26, 1721 Sarpsborg, Norway"
+  },
+  "Indre Østfold": {
+    "hitString": "BÅSTAD",
+    "name": "Nav Indre Østfold",
+    "geoId": "3118",
+    "enhetNr": "0124",
+    "url": "https://www.nav.no/kontor/nav-indre-ostfold",
+    "location": {
+      "lat": 59.6203008,
+      "lng": 11.0806447
+    },
+    "formatted_address": "Stasjonsgata 35, 1820 Spydeberg, Norway"
+  },
+  "Midt-Buskerud": {
+    "hitString": "ÅMOT",
+    "name": "Nav Midt-Buskerud",
+    "geoId": "3316",
+    "enhetNr": "0623",
+    "url": "https://www.nav.no/kontor/nav-midt-buskerud",
+    "location": {
+      "lat": 59.89275499999999,
+      "lng": 9.927484
+    },
+    "formatted_address": "Bergkrystallen 1, 3340 Åmot, Norway"
+  },
+  "Nordre Follo": {
+    "hitString": "TÅRNÅSEN",
+    "name": "Nav Nordre Follo",
+    "geoId": "3207",
+    "enhetNr": "0213",
+    "url": "https://www.nav.no/kontor/nav-nordre-follo",
+    "location": {
+      "lat": 59.71979140000001,
+      "lng": 10.8407831
+    },
+    "formatted_address": "Idrettsveien 18, 1400 Ski, Norway"
+  },
+  "Kvinnherad": {
+    "hitString": "UTÅKER",
+    "name": "Nav Kvinnherad",
+    "geoId": "4617",
+    "enhetNr": "1224",
+    "url": "https://www.nav.no/kontor/nav-kvinnherad",
+    "location": {
+      "lat": 59.86097419999999,
+      "lng": 5.7549533
+    },
+    "formatted_address": "Sentrumsvegen 29, 5460 Husnes, Norway"
+  },
+  "Hadeland": {
+    "hitString": "GRINDVOLL",
+    "name": "Nav Hadeland",
+    "geoId": "3234",
+    "enhetNr": "0534",
+    "url": "https://www.nav.no/kontor/nav-hadeland",
+    "location": {
+      "lat": 60.35703789999999,
+      "lng": 10.5717124
+    },
+    "formatted_address": "Smietorget, Storgata 16, 2750 Gran, Norway"
+  },
+  "Rælingen": {
+    "hitString": "LØVENSTAD",
+    "name": "Nav Rælingen",
+    "geoId": "3224",
+    "enhetNr": "0228",
+    "url": "https://www.nav.no/kontor/nav-raelingen",
+    "location": {
+      "lat": 59.9256702,
+      "lng": 11.0665088
+    },
+    "formatted_address": "Bjørnholthagan 6, 2008 Fjerdingby, Norway"
+  },
+  "Madla": {
+    "hitString": "STAVANGER",
+    "name": "Nav Madla",
+    "geoId": "110304",
+    "enhetNr": "1165",
+    "url": "https://www.nav.no/kontor/nav-madla",
+    "location": {
+      "lat": 58.95242990000001,
+      "lng": 5.681541699999999
+    },
+    "formatted_address": "Madlakrossen 6, 4042 Hafrsfjord, Norway"
+  },
+  "Alver": {
+    "hitString": "HJELMÅS",
+    "name": "Nav Alver",
+    "geoId": "4631",
+    "enhetNr": "1263",
+    "url": "https://www.nav.no/kontor/nav-alver",
+    "location": {
+      "lat": 60.5479241,
+      "lng": 5.288692
+    },
+    "formatted_address": "Kvernhushaugane 2, 5914 Isdalstø, Norway"
+  },
+  "Rakkestad": {
+    "hitString": "RAKKESTAD",
+    "name": "Nav Rakkestad",
+    "geoId": "3120",
+    "enhetNr": "0128",
+    "url": "https://www.nav.no/kontor/nav-rakkestad",
+    "location": {
+      "lat": 59.4279935,
+      "lng": 11.3430677
+    },
+    "formatted_address": "Rådhusveien 8, 1890 Rakkestad, Norway"
+  },
+  "Lier": {
+    "hitString": "SYLLING",
+    "name": "Nav Lier",
+    "geoId": "3312",
+    "enhetNr": "0626",
+    "url": "https://www.nav.no/kontor/nav-lier",
+    "location": {
+      "lat": 59.8178627,
+      "lng": 10.2736621
+    },
+    "formatted_address": "Dølasletta 3, 3408 Tranby, Norway"
+  },
+  "Bømlo": {
+    "hitString": "FINNÅS",
+    "name": "Nav Bømlo",
+    "geoId": "4613",
+    "enhetNr": "1219",
+    "url": "https://www.nav.no/kontor/nav-bomlo",
+    "location": {
+      "lat": 59.79447870000001,
+      "lng": 5.1718422
+    },
+    "formatted_address": "Kulturhusvegen 19, 5430 Bremnes, Norway"
+  },
+  "Færder": {
+    "hitString": "NØTTERØY",
+    "name": "Nav Færder",
+    "geoId": "3911",
+    "enhetNr": "5302",
+    "url": "https://www.nav.no/kontor/nav-faerder",
+    "location": {
+      "lat": 59.22424539999999,
+      "lng": 10.4095987
+    },
+    "formatted_address": "Tinghaugveien 16, 3140 Nøtterøy, Norway"
+  },
+  "Bodø": {
+    "hitString": "KJERRINGØY",
+    "name": "Nav Bodø",
+    "geoId": "1804",
+    "enhetNr": "1804",
+    "url": "https://www.nav.no/kontor/nav-bodo",
+    "location": {
+      "lat": 67.2859898,
+      "lng": 14.3882788
+    },
+    "formatted_address": "Sjøgata 41 - 43, 8006 Bodø, Norway"
+  },
+  "Voss": {
+    "hitString": "BOLSTADØYRI",
+    "name": "Nav Voss",
+    "geoId": "4621",
+    "enhetNr": "1235",
+    "url": "https://www.nav.no/kontor/nav-voss",
+    "location": {
+      "lat": 60.6293884,
+      "lng": 6.414926299999999
+    },
+    "formatted_address": "Gurid Almenningens Plass 1, 5704 Vossevangen, Norway"
+  },
+  "Hadsel": {
+    "hitString": "STRØNSTAD",
+    "name": "Nav Hadsel",
+    "geoId": "1866",
+    "enhetNr": "1866",
+    "url": "https://www.nav.no/kontor/nav-hadsel",
+    "location": {
+      "lat": 68.5633587,
+      "lng": 14.9084767
+    },
+    "formatted_address": "Rådhusgata 5, 8450 Stokmarknes, Norway"
+  },
+  "Larvik": {
+    "hitString": "TJODALYNG",
+    "name": "Nav Larvik",
+    "geoId": "3909",
+    "enhetNr": "5303",
+    "url": "https://www.nav.no/kontor/nav-larvik",
+    "location": {
+      "lat": 59.0538529,
+      "lng": 10.0292128
+    },
+    "formatted_address": "Jegersborggata 4, 3256 Larvik, Norway"
+  },
+  "Karmøy-Bokn": {
+    "hitString": "HÅVIK",
+    "name": "Nav Karmøy-Bokn",
+    "geoId": "1149",
+    "enhetNr": "1149",
+    "url": "https://www.nav.no/kontor/nav-karmoy-bokn",
+    "location": {
+      "lat": 59.28325400000001,
+      "lng": 5.3061759
+    },
+    "formatted_address": "Hovedgata 36, 4250 Kopervik, Norway"
+  },
+  "Narvik": {
+    "hitString": "TÅRSTAD",
+    "name": "Nav Narvik",
+    "geoId": "1853",
+    "enhetNr": "1805",
+    "url": "https://www.nav.no/kontor/nav-narvik",
+    "location": {
+      "lat": 68.43959199999999,
+      "lng": 17.4297334
+    },
+    "formatted_address": "Kongensgate 51, 8514 Narvik, Norway"
+  },
+  "Vadsø": {
+    "hitString": "VESTRE JAKOBSELV",
+    "name": "Nav Vadsø",
+    "geoId": "5607",
+    "enhetNr": "2003",
+    "url": "https://www.nav.no/kontor/nav-vadso",
+    "location": {
+      "lat": 70.0729741,
+      "lng": 29.7517149
+    },
+    "formatted_address": "W. Andersens gate 6, 9800 Vadsø, Norway"
+  },
+  "Hå": {
+    "hitString": "SIREVÅG",
+    "name": "Nav Hå",
+    "geoId": "1119",
+    "enhetNr": "1119",
+    "url": "https://www.nav.no/kontor/nav-ha",
+    "location": {
+      "lat": 58.66561489999999,
+      "lng": 5.6394295
+    },
+    "formatted_address": "Jadarvegen 3A, 4365 Nærbø, Norway"
+  },
+  "Bergen sentrum": {
+    "hitString": "Årstad",
+    "name": "Nav Bergen sentrum",
+    "geoId": "460107",
+    "enhetNr": "1208",
+    "url": "https://www.nav.no/kontor/nav-bergen-sentrum",
+    "location": {
+      "lat": 60.3795774,
+      "lng": 5.338276
+    },
+    "formatted_address": "Møllendalsveien 8, 5009 Bergen, Norway"
+  },
+  "Bjørnafjorden": {
+    "hitString": "LEPSØY",
+    "name": "Nav Bjørnafjorden",
+    "geoId": "4624",
+    "enhetNr": "1243",
+    "url": "https://www.nav.no/kontor/nav-bjornafjorden",
+    "location": {
+      "lat": 60.18865640000001,
+      "lng": 5.4645217
+    },
+    "formatted_address": "Holtbrekka 7, 5200 Os, Norway"
+  },
+  "Luster": {
+    "hitString": "HØYHEIMSVIK",
+    "name": "Nav Luster",
+    "geoId": "4644",
+    "enhetNr": "1426",
+    "url": "https://www.nav.no/kontor/nav-luster",
+    "location": {
+      "lat": 61.404385,
+      "lng": 7.294254700000001
+    },
+    "formatted_address": "Øyagata 14b, 6868 Gaupne, Norway"
+  },
+  "Ålesund": {
+    "hitString": "ÅLESUND",
+    "name": "Nav Ålesund",
+    "geoId": "1508",
+    "enhetNr": "1504",
+    "url": "https://www.nav.no/kontor/nav-alesund",
+    "location": {
+      "lat": 62.4717817,
+      "lng": 6.1546238
+    },
+    "formatted_address": "Notenesgata 6, 6002 Ålesund, Norway"
+  },
+  "Vindafjord-Etne": {
+    "hitString": "SKÅNEVIK",
+    "name": "Nav Vindafjord-Etne",
+    "geoId": "4611",
+    "enhetNr": "1160",
+    "url": "https://www.nav.no/kontor/nav-vindafjord-etne",
+    "location": {
+      "lat": 59.60419570000001,
+      "lng": 5.8113519
+    },
+    "formatted_address": "Rådhusplassen 1, 5580 Ølen, Norway"
+  },
+  "Hallingdal": {
+    "hitString": "ÅL",
+    "name": "Nav Hallingdal",
+    "geoId": "3328",
+    "enhetNr": "0617",
+    "url": "https://www.nav.no/kontor/nav-hallingdal",
+    "location": {
+      "lat": 60.5680398,
+      "lng": 9.10196
+    },
+    "formatted_address": "Rukkedalsvegen 46, 3540 Nesbyen, Norway"
+  },
+  "Indre Salten": {
+    "hitString": "ULVSVÅG",
+    "name": "Nav Indre Salten",
+    "geoId": "1875",
+    "enhetNr": "1841",
+    "url": "https://www.nav.no/kontor/nav-indre-salten",
+    "location": {
+      "lat": 67.25883259999999,
+      "lng": 15.3852577
+    },
+    "formatted_address": "Postveien 2, 8200 Fauske, Norway"
+  },
+  "Nesodden": {
+    "hitString": "BJØRNEMYR",
+    "name": "Nav Nesodden",
+    "geoId": "3212",
+    "enhetNr": "0216",
+    "url": "https://www.nav.no/kontor/nav-nesodden",
+    "location": {
+      "lat": 59.855937,
+      "lng": 10.6614766
+    },
+    "formatted_address": "Vestveien 51, 1452 Nesoddtangen, Norway"
+  },
+  "Ávjovárri": {
+    "hitString": "MAZE",
+    "name": "Nav Ávjovárri",
+    "geoId": "5612",
+    "enhetNr": "2011",
+    "url": "https://www.nav.no/kontor/nav-avjovarri",
+    "location": {
+      "lat": 69.4722972,
+      "lng": 25.5160153
+    },
+    "formatted_address": "Deanugeaidnu 6, 9731 Karasjok, Norway"
+  },
+  "Eidskog": {
+    "hitString": "ÅBOGEN",
+    "name": "Nav Eidskog",
+    "geoId": "3416",
+    "enhetNr": "0420",
+    "url": "https://www.nav.no/kontor/nav-eidskog",
+    "location": {
+      "lat": 59.98556010000001,
+      "lng": 12.1246144
+    },
+    "formatted_address": "Rådhusvegen 11, 2230 Skotterud, Norway"
+  },
+  "Sagene": {
+    "hitString": "OSLO",
+    "name": "Nav Sagene",
+    "geoId": "030103",
+    "enhetNr": "0314",
+    "url": "https://www.nav.no/kontor/nav-sagene",
+    "location": {
+      "lat": 59.9290753,
+      "lng": 10.7586059
+    },
+    "formatted_address": "Thorvald Meyers gate 9, 0555 Oslo, Norway"
+  },
+  "Stord": {
+    "hitString": "SAGVÅG",
+    "name": "Nav Stord",
+    "geoId": "4614",
+    "enhetNr": "1221",
+    "url": "https://www.nav.no/kontor/nav-stord",
+    "location": {
+      "lat": 59.7795368,
+      "lng": 5.4970119
+    },
+    "formatted_address": "Bandadalsplassen 5, 5417 Stord, Norway"
+  },
+  "Gáivuotna/Kåfjord": {
+    "hitString": "GÁIVUOTNA KÅFJORD",
+    "name": "Nav Gáivuotna/Kåfjord",
+    "geoId": "5540",
+    "enhetNr": "1940",
+    "url": "https://www.nav.no/kontor/nav-gaivuotna-kafjord",
+    "location": {
+      "lat": 69.6041718,
+      "lng": 20.5350184
+    },
+    "formatted_address": "Øvervegen 2, 9146 Olderdalen, Norway"
+  },
+  "Hammerfest-Måsøy": {
+    "hitString": "MÅSØY",
+    "name": "Nav Hammerfest-Måsøy",
+    "geoId": "5618",
+    "enhetNr": "2004",
+    "url": "https://www.nav.no/kontor/nav-hammerfest-masoy",
+    "location": {
+      "lat": 70.99525799999999,
+      "lng": 24.6715862
+    },
+    "formatted_address": "Strandgata 141, 9690 Havøysund, Norway"
+  },
+  "Risør": {
+    "hitString": "RISØR",
+    "name": "Nav Risør",
+    "geoId": "4201",
+    "enhetNr": "0901",
+    "url": "https://www.nav.no/kontor/nav-risor",
+    "location": {
+      "lat": 58.7213273,
+      "lng": 9.2267677
+    },
+    "formatted_address": "Tjenngata 9, 4950 Risør, Norway"
+  },
+  "Austevoll": {
+    "hitString": "TORANGSVÅG",
+    "name": "Nav Austevoll",
+    "geoId": "4625",
+    "enhetNr": "1244",
+    "url": "https://www.nav.no/kontor/nav-austevoll",
+    "location": {
+      "lat": 60.0993832,
+      "lng": 5.226197099999999
+    },
+    "formatted_address": "Birkelandsvegen 6, 5392 Storebø, Norway"
+  },
+  "Enebakk": {
+    "hitString": "YTRE ENEBAKK",
+    "name": "Nav Enebakk",
+    "geoId": "3220",
+    "enhetNr": "0229",
+    "url": "https://www.nav.no/kontor/nav-enebakk",
+    "location": {
+      "lat": 59.7634635,
+      "lng": 11.1442245
+    },
+    "formatted_address": "Prestegårdsveien 3, 1912 Enebakk, Norway"
+  },
+  "Lillestrøm": {
+    "hitString": "SØRUMSAND",
+    "name": "Nav Lillestrøm",
+    "geoId": "3205",
+    "enhetNr": "0231",
+    "url": "https://www.nav.no/kontor/nav-lillestrom",
+    "location": {
+      "lat": 59.95360379999999,
+      "lng": 11.040988
+    },
+    "formatted_address": "Dampsagveien 2B, 2000 Lillestrøm, Norway"
+  },
+  "Skaun Melhus": {
+    "hitString": "GÅSBAKKEN",
+    "name": "Nav Skaun Melhus",
+    "geoId": "5028",
+    "enhetNr": "1657",
+    "url": "https://www.nav.no/kontor/nav-skaun-melhus",
+    "location": {
+      "lat": 63.3237342,
+      "lng": 10.0671893
+    },
+    "formatted_address": "Rådhusvegen 12, 7353 Børsa, Norway"
+  },
+  "Solund": {
+    "hitString": "YTRØYGREND",
+    "name": "Nav Solund",
+    "geoId": "4636",
+    "enhetNr": "1412",
+    "url": "https://www.nav.no/kontor/nav-solund",
+    "location": {
+      "lat": 61.0723496,
+      "lng": 4.8405018
+    },
+    "formatted_address": "Storehaugen 4 D, 6924 Hardbakke, Norway"
+  },
+  "Jevnaker": {
+    "hitString": "JEVNAKER",
+    "name": "Nav Jevnaker",
+    "geoId": "3236",
+    "enhetNr": "0532",
+    "url": "https://www.nav.no/kontor/nav-jevnaker",
+    "location": {
+      "lat": 60.24063469999999,
+      "lng": 10.3855798
+    },
+    "formatted_address": "Kirkegata 6, 3520 Jevnaker, Norway"
+  },
+  "Porsanger": {
+    "hitString": "BØRSELV",
+    "name": "Nav Porsanger",
+    "geoId": "5622",
+    "enhetNr": "2020",
+    "url": "https://www.nav.no/kontor/nav-porsanger",
+    "location": {
+      "lat": 70.0527048,
+      "lng": 24.9637045
+    },
+    "formatted_address": "Sørnes bygget, Arne M Holdens vei 17, 9700 Lakselv, Norway"
+  },
+  "Bergen vest": {
+    "hitString": "Laksevåg",
+    "name": "Nav Bergen vest",
+    "geoId": "460105",
+    "enhetNr": "1206",
+    "url": "https://www.nav.no/kontor/nav-bergen-vest",
+    "location": {
+      "lat": 60.36271219999999,
+      "lng": 5.2336645
+    },
+    "formatted_address": "Loddefjordveien 2, 5171 Loddefjord, Norway"
+  },
+  "Nordre Aker": {
+    "hitString": "OSLO",
+    "name": "Nav Nordre Aker",
+    "geoId": "030108",
+    "enhetNr": "0331",
+    "url": "https://www.nav.no/kontor/nav-nordre-aker",
+    "location": {
+      "lat": 59.9508781,
+      "lng": 10.7672939
+    },
+    "formatted_address": "Gullhaugveien 7, 0484 Oslo, Norway"
+  },
+  "Ringsaker": {
+    "hitString": "ÅSMARKA",
+    "name": "Nav Ringsaker",
+    "geoId": "3411",
+    "enhetNr": "0412",
+    "url": "https://www.nav.no/kontor/nav-ringsaker",
+    "location": {
+      "lat": 60.8844497,
+      "lng": 10.9461568
+    },
+    "formatted_address": "Nordåsvegen 4, 2380 Brumunddal, Norway"
+  },
+  "Malvik": {
+    "hitString": "HOMMELVIK",
+    "name": "Nav Malvik",
+    "geoId": "5031",
+    "enhetNr": "1663",
+    "url": "https://www.nav.no/kontor/nav-malvik",
+    "location": {
+      "lat": 63.41103270000001,
+      "lng": 10.7946142
+    },
+    "formatted_address": "Malvikvegen 1335, 7550 Hommelvik, Norway"
+  },
+  "Ullensaker": {
+    "hitString": "KLØFTA",
+    "name": "Nav Ullensaker",
+    "geoId": "3209",
+    "enhetNr": "0235",
+    "url": "https://www.nav.no/kontor/nav-ullensaker",
+    "location": {
+      "lat": 60.14178639999999,
+      "lng": 11.1707401
+    },
+    "formatted_address": "Trondheimsvegen - Jessheim 82, 2050 Jessheim, Norway"
+  },
+  "Vestre Aker": {
+    "hitString": "Vestre Aker",
+    "name": "Nav Vestre Aker",
+    "geoId": "030107",
+    "enhetNr": "0334",
+    "url": "https://www.nav.no/kontor/nav-vestre-aker",
+    "location": {
+      "lat": 59.9417596,
+      "lng": 10.6557823
+    },
+    "formatted_address": "Sørkedalsveien 150B, 0754 Oslo, Norway"
+  },
+  "Alna": {
+    "hitString": "OSLO",
+    "name": "Nav Alna",
+    "geoId": "030112",
+    "enhetNr": "0326",
+    "url": "https://www.nav.no/kontor/nav-alna",
+    "location": {
+      "lat": 59.94076510000001,
+      "lng": 10.8973292
+    },
+    "formatted_address": "Trygve Lies Plass 1, 1051 Oslo, Norway"
+  },
+  "Arendal": {
+    "hitString": "KOLBJØRNSVIK",
+    "name": "Nav Arendal",
+    "geoId": "4203",
+    "enhetNr": "0906",
+    "url": "https://www.nav.no/kontor/nav-arendal",
+    "location": {
+      "lat": 58.45852199999999,
+      "lng": 8.768057599999999
+    },
+    "formatted_address": "Nedre Tyholmsvei 13, 4836 Arendal, Norway"
+  },
+  "Kongsvinger": {
+    "hitString": "HOKKÅSEN",
+    "name": "Nav Kongsvinger",
+    "geoId": "3401",
+    "enhetNr": "0402",
+    "url": "https://www.nav.no/kontor/nav-kongsvinger",
+    "location": {
+      "lat": 60.19068609999999,
+      "lng": 11.9985972
+    },
+    "formatted_address": "Rådhusgata 14, 2212 Kongsvinger, Norway"
+  },
+  "Lom-Skjåk": {
+    "hitString": "SKJÅK",
+    "name": "Nav Lom-Skjåk",
+    "geoId": "3433",
+    "enhetNr": "0513",
+    "url": "https://www.nav.no/kontor/nav-lom-skjak",
+    "location": {
+      "lat": 61.887817,
+      "lng": 8.2562786
+    },
+    "formatted_address": "Industrivegen 11, 2690 Skjåk, Norway"
+  },
+  "Eidsvoll Hurdal": {
+    "hitString": "RÅHOLT",
+    "name": "Nav Eidsvoll Hurdal",
+    "geoId": "3240",
+    "enhetNr": "0237",
+    "url": "https://www.nav.no/kontor/nav-eidsvoll-hurdal",
+    "location": {
+      "lat": 60.3290251,
+      "lng": 11.2580477
+    },
+    "formatted_address": "Wergelands gate 7, 2080 Sundet, Norway"
+  },
+  "Drangedal": {
+    "hitString": "TØRDAL",
+    "name": "Nav Drangedal",
+    "geoId": "4016",
+    "enhetNr": "0817",
+    "url": "https://www.nav.no/kontor/nav-drangedal",
+    "location": {
+      "lat": 59.09680650000001,
+      "lng": 9.0628476
+    },
+    "formatted_address": "Strandgata 7, 3750 Prestestranda, Norway"
+  },
+  "Askøy": {
+    "hitString": "FLORVÅG",
+    "name": "Nav Askøy",
+    "geoId": "4627",
+    "enhetNr": "1247",
+    "url": "https://www.nav.no/kontor/nav-askoy",
+    "location": {
+      "lat": 60.4096261,
+      "lng": 5.2275851
+    },
+    "formatted_address": "Gamle Kleppestøvegen 2, 5300 Kleppestø, Norway"
+  },
+  "Vestnes": {
+    "hitString": "VÅGSTRANDA",
+    "name": "Nav Vestnes",
+    "geoId": "1535",
+    "enhetNr": "1535",
+    "url": "https://www.nav.no/kontor/nav-vestnes",
+    "location": {
+      "lat": 62.6226631,
+      "lng": 7.0931453
+    },
+    "formatted_address": "Kjøpmannsgata 11, 6390 Vestnes, Norway"
+  },
+  "Hattfjelldal": {
+    "hitString": "HATTFJELLDAL",
+    "name": "Nav Hattfjelldal",
+    "geoId": "1826",
+    "enhetNr": "1826",
+    "url": "https://www.nav.no/kontor/nav-hattfjelldal",
+    "location": {
+      "lat": 65.5975326,
+      "lng": 13.9908726
+    },
+    "formatted_address": "O. T. Olsens vei 3, 8692 Hattfjelldal, Norway"
+  },
+  "Dalane": {
+    "hitString": "HELLVIK",
+    "name": "Nav Dalane",
+    "geoId": "1101",
+    "enhetNr": "1101",
+    "url": "https://www.nav.no/kontor/nav-dalane",
+    "location": {
+      "lat": 58.44988429999999,
+      "lng": 5.995422899999999
+    },
+    "formatted_address": "Strandgaten 32-34, 4370 Egersund, Norway"
+  },
+  "Sel": {
+    "hitString": "HØVRINGEN",
+    "name": "Nav Sel",
+    "geoId": "3437",
+    "enhetNr": "0517",
+    "url": "https://www.nav.no/kontor/nav-sel",
+    "location": {
+      "lat": 61.77204139999999,
+      "lng": 9.535387499999999
+    },
+    "formatted_address": "Ola Dahls gate 3B, 2670 Otta, Norway"
+  },
+  "Gjøvik": {
+    "hitString": "GJØVIK",
+    "name": "Nav Gjøvik",
+    "geoId": "3407",
+    "enhetNr": "0502",
+    "url": "https://www.nav.no/kontor/nav-gjovik",
+    "location": {
+      "lat": 60.7961413,
+      "lng": 10.6949746
+    },
+    "formatted_address": "Parkgata 10 A, 2815 Gjøvik, Norway"
+  },
+  "Ullensvang": {
+    "hitString": "RØLDAL",
+    "name": "Nav Ullensvang",
+    "geoId": "4618",
+    "enhetNr": "1228",
+    "url": "https://www.nav.no/kontor/nav-ullensvang",
+    "location": {
+      "lat": 60.070079,
+      "lng": 6.5422575
+    },
+    "formatted_address": "Eitrheimsvegen 32, 5750 Odda, Norway"
+  },
+  "Sandefjord": {
+    "hitString": "MELSOMVIK",
+    "name": "Nav Sandefjord",
+    "geoId": "3907",
+    "enhetNr": "0710",
+    "url": "https://www.nav.no/kontor/nav-sandefjord",
+    "location": {
+      "lat": 59.12978699999999,
+      "lng": 10.2193292
+    },
+    "formatted_address": "Søebergs gate 3, 3211 Sandefjord, Norway"
+  },
+  "Klepp-Time": {
+    "hitString": "BRYNE",
+    "name": "Nav Klepp-Time",
+    "geoId": "1121",
+    "enhetNr": "1120",
+    "url": "https://www.nav.no/kontor/nav-klepp-time",
+    "location": {
+      "lat": 58.7800288,
+      "lng": 5.6225363
+    },
+    "formatted_address": "Kjøpmannsbrotet 5, 4351 Verdalen, Norway"
+  },
+  "Vågå": {
+    "hitString": "VÅGÅ",
+    "name": "Nav Vågå",
+    "geoId": "3435",
+    "enhetNr": "0515",
+    "url": "https://www.nav.no/kontor/nav-vaga",
+    "location": {
+      "lat": 61.8756684,
+      "lng": 9.095640699999999
+    },
+    "formatted_address": "Edvard Storms veg 2, 2680 Vågå, Norway"
+  },
+  "Lerkendal": {
+    "hitString": "TRONDHEIM",
+    "name": "Nav Lerkendal",
+    "geoId": "500103",
+    "enhetNr": "5702",
+    "url": "https://www.nav.no/kontor/nav-lerkendal",
+    "location": {
+      "lat": 63.4052434,
+      "lng": 10.3980636
+    },
+    "formatted_address": "Sorgenfriveien 13, 7031 Trondheim, Norway"
+  },
+  "Trysil": {
+    "hitString": "SLETTÅS",
+    "name": "Nav Trysil",
+    "geoId": "3421",
+    "enhetNr": "0428",
+    "url": "https://www.nav.no/kontor/nav-trysil",
+    "location": {
+      "lat": 61.315048,
+      "lng": 12.2646774
+    },
+    "formatted_address": "Korsbergsvegen 2, 2420 Trysil, Norway"
+  },
+  "Lindesnes": {
+    "hitString": "ØYSLEBØ",
+    "name": "Nav Lindesnes",
+    "geoId": "4205",
+    "enhetNr": "1002",
+    "url": "https://www.nav.no/kontor/nav-lindesnes",
+    "location": {
+      "lat": 58.0247032,
+      "lng": 7.457446999999999
+    },
+    "formatted_address": "Havnegata 1, 4515 Mandal, Norway"
+  },
+  "Falkenborg": {
+    "hitString": "Østbyen",
+    "name": "Nav Falkenborg",
+    "geoId": "500102",
+    "enhetNr": "5701",
+    "url": "https://www.nav.no/kontor/nav-falkenborg",
+    "location": {
+      "lat": 63.43665739999999,
+      "lng": 10.4581146
+    },
+    "formatted_address": "Peder Falcks veg 31 A, 7044 Trondheim, Norway"
+  },
+  "Fensfjorden": {
+    "hitString": "ÅNNELAND",
+    "name": "Nav Fensfjorden",
+    "geoId": "4635",
+    "enhetNr": "1266",
+    "url": "https://www.nav.no/kontor/nav-fensfjorden",
+    "location": {
+      "lat": 60.83442830000001,
+      "lng": 5.2631212
+    },
+    "formatted_address": "Fensfjordvegen 615, 5986 Hosteland, Norway"
+  },
+  "Ringerike": {
+    "hitString": "NES I ÅDAL",
+    "name": "Nav Ringerike",
+    "geoId": "3305",
+    "enhetNr": "0605",
+    "url": "https://www.nav.no/kontor/nav-ringerike",
+    "location": {
+      "lat": 60.16702079999999,
+      "lng": 10.2565083
+    },
+    "formatted_address": "Hønefoss Bru 1D, 3510 Hønefoss, Norway"
+  },
+  "Gjesdal": {
+    "hitString": "ÅLGÅRD",
+    "name": "Nav Gjesdal",
+    "geoId": "1122",
+    "enhetNr": "1122",
+    "url": "https://www.nav.no/kontor/nav-gjesdal",
+    "location": {
+      "lat": 58.7651201,
+      "lng": 5.8567477
+    },
+    "formatted_address": "Rettedalen 11, 4330 Ålgård, Norway"
+  },
+  "Oppdal og Rennebu": {
+    "hitString": "LØNSET",
+    "name": "Nav Oppdal og Rennebu",
+    "geoId": "5021",
+    "enhetNr": "1634",
+    "url": "https://www.nav.no/kontor/nav-oppdal-og-rennebu",
+    "location": {
+      "lat": 62.59510049999999,
+      "lng": 9.6875644
+    },
+    "formatted_address": "Inge Krokanns veg 2, 7340 Oppdal, Norway"
+  },
+  "Råde": {
+    "hitString": "RÅDE",
+    "name": "Nav Råde",
+    "geoId": "3112",
+    "enhetNr": "0135",
+    "url": "https://www.nav.no/kontor/nav-rade",
+    "location": {
+      "lat": 59.35176139999999,
+      "lng": 10.87151
+    },
+    "formatted_address": "Skråtorpveien 2A, 1640 Råde, Norway"
+  },
+  "Hvaler": {
+    "hitString": "NEDGÅRDEN",
+    "name": "Nav Hvaler",
+    "geoId": "3110",
+    "enhetNr": "0111",
+    "url": "https://www.nav.no/kontor/nav-hvaler",
+    "location": {
+      "lat": 59.02812669999999,
+      "lng": 11.031157
+    },
+    "formatted_address": "Storveien 32, 1680 Skjærhalden, Norway"
+  },
+  "Sogndal": {
+    "hitString": "FJÆRLAND",
+    "name": "Nav Sogndal",
+    "geoId": "4640",
+    "enhetNr": "1420",
+    "url": "https://www.nav.no/kontor/nav-sogndal",
+    "location": {
+      "lat": 61.1843819,
+      "lng": 6.8496519
+    },
+    "formatted_address": "Sognefjordvegen 56, 6863 Leikanger, Norway"
+  },
+  "Stor-Elvdal": {
+    "hitString": "STOR-ELVDAL",
+    "name": "Nav Stor-Elvdal",
+    "geoId": "3423",
+    "enhetNr": "0430",
+    "url": "https://www.nav.no/kontor/nav-stor-elvdal",
+    "location": {
+      "lat": 61.5719896,
+      "lng": 11.0472431
+    },
+    "formatted_address": "Storgata 120, 2480 Koppang, Norway"
+  },
+  "Suldal": {
+    "hitString": "FOLDØY",
+    "name": "Nav Suldal",
+    "geoId": "1134",
+    "enhetNr": "1134",
+    "url": "https://www.nav.no/kontor/nav-suldal",
+    "location": {
+      "lat": 59.48336250000001,
+      "lng": 6.2509548
+    },
+    "formatted_address": "Gata 22, 4230 Sand, Norway"
+  },
+  "Våler": {
+    "hitString": "VÅLER I ØSTFOLD",
+    "name": "Nav Våler",
+    "geoId": "3114",
+    "enhetNr": "0137",
+    "url": "https://www.nav.no/kontor/nav-valer",
+    "location": {
+      "lat": 60.673875,
+      "lng": 11.834357
+    },
+    "formatted_address": "Vålgutua 199, 2436 Våler, Norway"
+  },
+  "Osterøy": {
+    "hitString": "LONEVÅG",
+    "name": "Nav Osterøy",
+    "geoId": "4630",
+    "enhetNr": "1253",
+    "url": "https://www.nav.no/kontor/nav-osteroy",
+    "location": {
+      "lat": 60.52415199999999,
+      "lng": 5.505665599999999
+    },
+    "formatted_address": "Geitaryggen 8, 5282 Lonevåg, Norway"
+  },
+  "Aure": {
+    "hitString": "KJØRSVIKBUGEN",
+    "name": "Nav Aure",
+    "geoId": "1576",
+    "enhetNr": "1576",
+    "url": "https://www.nav.no/kontor/nav-aure",
+    "location": {
+      "lat": 63.2680897,
+      "lng": 8.5311916
+    },
+    "formatted_address": "Fv359 150, 6690 Aure, Norway"
+  },
+  "Molde": {
+    "hitString": "SKÅLA",
+    "name": "Nav Molde",
+    "geoId": "1506",
+    "enhetNr": "1502",
+    "url": "https://www.nav.no/kontor/nav-molde",
+    "location": {
+      "lat": 62.7398101,
+      "lng": 7.173369099999999
+    },
+    "formatted_address": "Frænavegen 16, 6415 Molde, Norway"
+  },
+  "Løten": {
+    "hitString": "ÅDALSBRUK",
+    "name": "Nav Løten",
+    "geoId": "3412",
+    "enhetNr": "0415",
+    "url": "https://www.nav.no/kontor/nav-loten",
+    "location": {
+      "lat": 60.81755990000001,
+      "lng": 11.3436224
+    },
+    "formatted_address": "Kildevegen 1, Tingberg, Kildevegen 1, 2340 Løten, Norway"
+  },
+  "Rauma": {
+    "hitString": "ÅNDALSNES",
+    "name": "Nav Rauma",
+    "geoId": "1539",
+    "enhetNr": "1539",
+    "url": "https://www.nav.no/kontor/nav-rauma",
+    "location": {
+      "lat": 62.5674681,
+      "lng": 7.691600799999999
+    },
+    "formatted_address": "Vollan 180, 6300 Åndalsnes, Norway"
+  },
+  "Hjelmeland": {
+    "hitString": "ÅRDAL I RYFYLKE",
+    "name": "Nav Hjelmeland",
+    "geoId": "1133",
+    "enhetNr": "1133",
+    "url": "https://www.nav.no/kontor/nav-hjelmeland",
+    "location": {
+      "lat": 59.23428130000001,
+      "lng": 6.179625
+    },
+    "formatted_address": "Helsehuset, Prestagarden 15, 4130 Hjelmelandsvågen, Norway"
+  },
+  "Årdal": {
+    "hitString": "ÅRDALSTANGEN",
+    "name": "Nav Årdal",
+    "geoId": "4643",
+    "enhetNr": "1424",
+    "url": "https://www.nav.no/kontor/nav-ardal",
+    "location": {
+      "lat": 61.2358661,
+      "lng": 7.702692199999999
+    },
+    "formatted_address": "Statsråd Evensens veg 6, 6885 Årdalstangen, Norway"
+  },
+  "Bamble": {
+    "hitString": "LANGESUND",
+    "name": "Nav Bamble",
+    "geoId": "4012",
+    "enhetNr": "0814",
+    "url": "https://www.nav.no/kontor/nav-bamble",
+    "location": {
+      "lat": 59.0443354,
+      "lng": 9.6923665
+    },
+    "formatted_address": "Krabberødveien 1b, 3960 Stathelle, Norway"
+  },
+  "Øygarden": {
+    "hitString": "ÅGOTNES",
+    "name": "Nav Øygarden",
+    "geoId": "4626",
+    "enhetNr": "1246",
+    "url": "https://www.nav.no/kontor/nav-oygarden",
+    "location": {
+      "lat": 60.3590548,
+      "lng": 5.127130699999999
+    },
+    "formatted_address": "Grønamyrvegen 18, 5353 Straume, Norway"
+  },
+  "Gamle Oslo": {
+    "hitString": "OSLO",
+    "name": "Nav Gamle Oslo",
+    "geoId": "030101",
+    "enhetNr": "0316",
+    "url": "https://www.nav.no/kontor/nav-gamle-oslo",
+    "location": {
+      "lat": 59.91444800000001,
+      "lng": 10.7747976
+    },
+    "formatted_address": "Hagegata 22, 0653 Oslo, Norway"
+  },
+  "Nordreisa": {
+    "hitString": "SØRKJOSEN",
+    "name": "Nav Nordreisa",
+    "geoId": "5544",
+    "enhetNr": "1942",
+    "url": "https://www.nav.no/kontor/nav-nordreisa",
+    "location": {
+      "lat": 69.7684841,
+      "lng": 21.0258091
+    },
+    "formatted_address": "Sentrum 17, 9151 Storslett, Norway"
+  },
+  "Kristiansand": {
+    "hitString": "BRENNÅSEN",
+    "name": "Nav Kristiansand",
+    "geoId": "4204",
+    "enhetNr": "1001",
+    "url": "https://www.nav.no/kontor/nav-kristiansand",
+    "location": {
+      "lat": 58.1473892,
+      "lng": 7.995572600000001
+    },
+    "formatted_address": "S, Gyldenløves gate 23, 4611 Kristiansand, Norway"
+  },
+  "Nordkapp": {
+    "hitString": "HONNINGSVÅG",
+    "name": "Nav Nordkapp",
+    "geoId": "5620",
+    "enhetNr": "2019",
+    "url": "https://www.nav.no/kontor/nav-nordkapp",
+    "location": {
+      "lat": 70.9819216,
+      "lng": 25.9708768
+    },
+    "formatted_address": "Storgata 1B, 9750 Honningsvåg, Norway"
+  },
+  "Gamvik": {
+    "hitString": "SKJÅNES",
+    "name": "Nav Gamvik",
+    "geoId": "5626",
+    "enhetNr": "2023",
+    "url": "https://www.nav.no/kontor/nav-gamvik",
+    "location": {
+      "lat": 71.03459939999999,
+      "lng": 27.8484006
+    },
+    "formatted_address": "Værveien 98, 9770 Mehamn, Norway"
+  },
+  "Solør": {
+    "hitString": "GJESÅSEN",
+    "name": "Nav Solør",
+    "geoId": "3418",
+    "enhetNr": "0425",
+    "url": "https://www.nav.no/kontor/nav-solor",
+    "location": {
+      "lat": 60.6132777,
+      "lng": 12.0085453
+    },
+    "formatted_address": "Negardsvegen 1, 2270 Flisa, Norway"
+  },
+  "Andøy": {
+    "hitString": "RISØYHAMN",
+    "name": "Nav Andøy",
+    "geoId": "1871",
+    "enhetNr": "1871",
+    "url": "https://www.nav.no/kontor/nav-andoy",
+    "location": {
+      "lat": 69.31574549999999,
+      "lng": 16.1189969
+    },
+    "formatted_address": "Storgata 54, 3. Etage, 8480 Andenes, Norway"
+  },
+  "Gjemnes": {
+    "hitString": "BATNFJORDSØRA",
+    "name": "Nav Gjemnes",
+    "geoId": "1557",
+    "enhetNr": "1557",
+    "url": "https://www.nav.no/kontor/nav-gjemnes",
+    "location": {
+      "lat": 62.8924421,
+      "lng": 7.679739400000001
+    },
+    "formatted_address": "Fjøsbakken 44, 6631 Batnfjordsøra, Norway"
+  },
+  "Birkenes": {
+    "hitString": "HEREFOSS",
+    "name": "Nav Birkenes",
+    "geoId": "4216",
+    "enhetNr": "0928",
+    "url": "https://www.nav.no/kontor/nav-birkenes",
+    "location": {
+      "lat": 58.3349111,
+      "lng": 8.2331287
+    },
+    "formatted_address": "Gnr 88 Bnr 574 Kommunehuset, Smedens Kjerr 30, 4760 Birkeland, Norway"
+  },
+  "Aurskog-Høland": {
+    "hitString": "BJØRKELANGEN",
+    "name": "Nav Aurskog-Høland",
+    "geoId": "3226",
+    "enhetNr": "0221",
+    "url": "https://www.nav.no/kontor/nav-aurskog-holand",
+    "location": {
+      "lat": 59.883066,
+      "lng": 11.5649622
+    },
+    "formatted_address": "Rådhusveien 3, 1940 Bjørkelangen, Norway"
+  },
+  "Bergen sør": {
+    "hitString": "Fana",
+    "name": "Nav Bergen sør",
+    "geoId": "460103",
+    "enhetNr": "1202",
+    "url": "https://www.nav.no/kontor/nav-bergen-sor",
+    "location": {
+      "lat": 60.29162119999999,
+      "lng": 5.2486711
+    },
+    "formatted_address": "Kokstadflaten 40, 5257 Kokstad, Norway"
+  },
+  "Sandnes": {
+    "hitString": "HOMMERSÅK",
+    "name": "Nav Sandnes",
+    "geoId": "1108",
+    "enhetNr": "1102",
+    "url": "https://www.nav.no/kontor/nav-sandnes",
+    "location": {
+      "lat": 58.8426522,
+      "lng": 5.7335436
+    },
+    "formatted_address": "Hoveveien 9, 4306 Sandnes, Norway"
+  },
+  "Vefsna": {
+    "hitString": "MOSJØEN",
+    "name": "Nav Vefsna",
+    "geoId": "1824",
+    "enhetNr": "1824",
+    "url": "https://www.nav.no/kontor/nav-vefsna",
+    "location": {
+      "lat": 65.83537199999999,
+      "lng": 13.1921628
+    },
+    "formatted_address": "C. M. Havigs gate 45, 8656 Mosjøen, Norway"
+  },
+  "Strand": {
+    "hitString": "JØRPELAND",
+    "name": "Nav Strand",
+    "geoId": "1130",
+    "enhetNr": "1130",
+    "url": "https://www.nav.no/kontor/nav-strand",
+    "location": {
+      "lat": 59.0202591,
+      "lng": 6.038664799999999
+    },
+    "formatted_address": "Kvalshaugvegen 1, 4100 Jørpeland, Norway"
+  },
+  "Kristiansund": {
+    "hitString": "KRISTIANSUND N",
+    "name": "Nav Kristiansund",
+    "geoId": "1505",
+    "enhetNr": "1505",
+    "url": "https://www.nav.no/kontor/nav-kristiansund",
+    "location": {
+      "lat": 63.1159292,
+      "lng": 7.7339597
+    },
+    "formatted_address": "Astrups gate 3, 6509 Kristiansund N, Norway"
+  },
+  "Porsgrunn": {
+    "hitString": "BREVIK",
+    "name": "Nav Porsgrunn",
+    "geoId": "4001",
+    "enhetNr": "0805",
+    "url": "https://www.nav.no/kontor/nav-porsgrunn",
+    "location": {
+      "lat": 59.141101,
+      "lng": 9.6578396
+    },
+    "formatted_address": "Kammerherreløkka 2, 3915 Porsgrunn, Norway"
+  },
+  "Sula": {
+    "hitString": "LANGEVÅG",
+    "name": "Nav Sula",
+    "geoId": "1531",
+    "enhetNr": "1531",
+    "url": "https://www.nav.no/kontor/nav-sula",
+    "location": {
+      "lat": 62.4398275,
+      "lng": 6.1902082
+    },
+    "formatted_address": "Molværsvegen 14, 6030 Langevåg, Norway"
+  },
+  "Lillesand": {
+    "hitString": "HØVÅG",
+    "name": "Nav Lillesand",
+    "geoId": "4215",
+    "enhetNr": "0926",
+    "url": "https://www.nav.no/kontor/nav-lillesand",
+    "location": {
+      "lat": 58.249664,
+      "lng": 8.3761905
+    },
+    "formatted_address": "Storgata 1, 4790 Lillesand, Norway"
+  },
+  "Tinn": {
+    "hitString": "TINN AUSTBYGD",
+    "name": "Nav Tinn",
+    "geoId": "4026",
+    "enhetNr": "0826",
+    "url": "https://www.nav.no/kontor/nav-tinn",
+    "location": {
+      "lat": 59.87869159999999,
+      "lng": 8.5972939
+    },
+    "formatted_address": "Månaveien 11, 3660 Rjukan, Norway"
+  },
+  "Nesna": {
+    "hitString": "VIKHOLMEN",
+    "name": "Nav Nesna",
+    "geoId": "1828",
+    "enhetNr": "1828",
+    "url": "https://www.nav.no/kontor/nav-nesna",
+    "location": {
+      "lat": 66.199095,
+      "lng": 13.0169082
+    },
+    "formatted_address": "Movegen 24, 8700 Nesna, Norway"
+  },
+  "Lyngen": {
+    "hitString": "LYNGSEIDET",
+    "name": "Nav Lyngen",
+    "geoId": "5536",
+    "enhetNr": "1938",
+    "url": "https://www.nav.no/kontor/nav-lyngen",
+    "location": {
+      "lat": 69.57629899999999,
+      "lng": 20.2195172
+    },
+    "formatted_address": "Fv868 12, 9060 Lyngseidet, Norway"
+  },
+  "Nordstrand": {
+    "hitString": "Nordstrand",
+    "name": "Nav Nordstrand",
+    "geoId": "030114",
+    "enhetNr": "0318",
+    "url": "https://www.nav.no/kontor/nav-nordstrand",
+    "location": {
+      "lat": 59.879248,
+      "lng": 10.8072174
+    },
+    "formatted_address": "Cecilie Thoresens vei 1, 1153 Oslo, Norway"
+  },
+  "Holmestrand": {
+    "hitString": "SUNDBYFOSS",
+    "name": "Nav Holmestrand",
+    "geoId": "3903",
+    "enhetNr": "5301",
+    "url": "https://www.nav.no/kontor/nav-holmestrand",
+    "location": {
+      "lat": 59.4872373,
+      "lng": 10.3186147
+    },
+    "formatted_address": "Langgaten 37, 3080 Holmestrand, Norway"
+  },
+  "Sortland": {
+    "hitString": "SORTLAND",
+    "name": "Nav Sortland",
+    "geoId": "1870",
+    "enhetNr": "1870",
+    "url": "https://www.nav.no/kontor/nav-sortland",
+    "location": {
+      "lat": 68.6932578,
+      "lng": 15.4158277
+    },
+    "formatted_address": "Strandgata 30, 8400 Sortland, Norway"
+  },
+  "St. Hanshaugen": {
+    "hitString": "Sentrum",
+    "name": "Nav St. Hanshaugen",
+    "geoId": "030116",
+    "enhetNr": "0313",
+    "url": "https://www.nav.no/kontor/nav-st.hanshaugen",
+    "location": {
+      "lat": 59.9241143,
+      "lng": 10.7327211
+    },
+    "formatted_address": "Pilestredet 56, 0167 Oslo, Norway"
+  },
+  "Eiganes og Tasta": {
+    "hitString": "Eiganes og Våland",
+    "name": "Nav Eiganes og Tasta",
+    "geoId": "110303",
+    "enhetNr": "1161",
+    "url": "https://www.nav.no/kontor/nav-eiganes-og-tasta",
+    "location": {
+      "lat": 58.9818981,
+      "lng": 5.7131444
+    },
+    "formatted_address": "Postboks 119, 4001 Stavanger, Norway"
+  },
+  "Hillevåg og Hinna": {
+    "hitString": "Hillevåg",
+    "name": "Nav Hillevåg og Hinna",
+    "geoId": "110306",
+    "enhetNr": "1164",
+    "url": "https://www.nav.no/kontor/nav-hillevag-og-hinna",
+    "location": {
+      "lat": 58.9050746,
+      "lng": 5.7322722
+    },
+    "formatted_address": "Gullspennetunet 1, 4032 Stavanger, Norway"
+  },
+  "Hundvåg og Storhaug": {
+    "hitString": "Hundvåg",
+    "name": "Nav Hundvåg og Storhaug",
+    "geoId": "110301",
+    "enhetNr": "1162",
+    "url": "https://www.nav.no/kontor/nav-hundvag-og-storhaug",
+    "location": {
+      "lat": 58.9683073,
+      "lng": 5.760059399999999
+    },
+    "formatted_address": "Tinngata 8, 4014 Stavanger, Norway"
+  },
+  "Rennesøy og Finnøy": {
+    "hitString": "Finnøy",
+    "name": "Nav Rennesøy og Finnøy",
+    "geoId": "110308",
+    "enhetNr": "1169",
+    "url": "https://www.nav.no/kontor/nav-rennesoy-og-finnoy",
+    "location": {
+      "lat": 59.0995356,
+      "lng": 5.7004982
+    },
+    "formatted_address": "Vikevågveien 97, 4150 Rennesøy, Norway"
+  },
+  "Sør-Varanger": {
+    "hitString": "BUGØYNES",
+    "name": "Nav Sør-Varanger",
+    "geoId": "5605",
+    "enhetNr": "2030",
+    "url": "https://www.nav.no/kontor/nav-sor-varanger",
+    "location": {
+      "lat": 69.7278015,
+      "lng": 30.0448216
+    },
+    "formatted_address": "Dr. Wessels gate 19, 9900 Kirkenes, Norway"
+  },
+  "Søndre Nordstrand": {
+    "hitString": "Søndre Nordstrand",
+    "name": "Nav Søndre Nordstrand",
+    "geoId": "030115",
+    "enhetNr": "0319",
+    "url": "https://www.nav.no/kontor/nav-sondre-nordstrand",
+    "location": {
+      "lat": 59.8378577,
+      "lng": 10.7961348
+    },
+    "formatted_address": "Ravnåsveien 1, 1254 Oslo, Norway"
+  },
+  "Deatnu/Tana": {
+    "hitString": "DEATNU TANA",
+    "name": "Nav Deatnu/Tana",
+    "geoId": "5628",
+    "enhetNr": "2025",
+    "url": "https://www.nav.no/kontor/nav-deatnu-tana",
+    "location": {
+      "lat": 70.19899339999999,
+      "lng": 28.1731513
+    },
+    "formatted_address": "Maskevarreveien 1, 9845 Tana, Norway"
+  },
+  "Sola": {
+    "hitString": "RØYNEBERG",
+    "name": "Nav Sola",
+    "geoId": "1124",
+    "enhetNr": "1124",
+    "url": "https://www.nav.no/kontor/nav-sola",
+    "location": {
+      "lat": 58.8880016,
+      "lng": 5.6473545
+    },
+    "formatted_address": "Rådhusvegen 21, 4050 Sola, Norway"
+  },
+  "Bergen nord": {
+    "hitString": "Åsane",
+    "name": "Nav Bergen nord",
+    "geoId": "460108",
+    "enhetNr": "1203",
+    "url": "https://www.nav.no/kontor/nav-bergen-nord",
+    "location": {
+      "lat": 60.4645473,
+      "lng": 5.3218348
+    },
+    "formatted_address": "Åsane Senter 19, 5116 Ulset, Norway"
+  },
+  "Horten": {
+    "hitString": "ÅSGÅRDSTRAND",
+    "name": "Nav Horten",
+    "geoId": "3901",
+    "enhetNr": "0701",
+    "url": "https://www.nav.no/kontor/nav-horten",
+    "location": {
+      "lat": 59.4160061,
+      "lng": 10.4840977
+    },
+    "formatted_address": "Apotekergata 16, 3187 Horten, Norway"
+  },
+  "Østre Toten": {
+    "hitString": "ØSTRE TOTEN",
+    "name": "Nav Østre Toten",
+    "geoId": "3442",
+    "enhetNr": "0528",
+    "url": "https://www.nav.no/kontor/nav-ostre-toten",
+    "location": {
+      "lat": 60.72547299999999,
+      "lng": 10.608494
+    },
+    "formatted_address": "Kirkevegen 8, 2830 Raufoss, Norway"
+  },
+  "Moss": {
+    "hitString": "RYGGE",
+    "name": "Nav Moss",
+    "geoId": "3103",
+    "enhetNr": "0104",
+    "url": "https://www.nav.no/kontor/nav-moss",
+    "location": {
+      "lat": 59.436936,
+      "lng": 10.6640959
+    },
+    "formatted_address": "Prinsens gate 5, 1530 Moss, Norway"
+  },
+  "Skiptvet Marker": {
+    "hitString": "ØRJE",
+    "name": "Nav Skiptvet Marker",
+    "geoId": "3122",
+    "enhetNr": "0119",
+    "url": "https://www.nav.no/kontor/nav-skiptvet-marker",
+    "location": {
+      "lat": 59.4770098,
+      "lng": 11.1616712
+    },
+    "formatted_address": "Storveien 24, 1816 Skiptvet, Norway"
+  },
+  "Vardø": {
+    "hitString": "VARDØ",
+    "name": "Nav Vardø",
+    "geoId": "5634",
+    "enhetNr": "2002",
+    "url": "https://www.nav.no/kontor/nav-vardo",
+    "location": {
+      "lat": 70.3739681,
+      "lng": 31.0952758
+    },
+    "formatted_address": "Hospitalgata 6, 9952 Vardø, Norway"
+  },
+  "Hasvik": {
+    "hitString": "SØRVÆR",
+    "name": "Nav Hasvik",
+    "geoId": "5616",
+    "enhetNr": "2015",
+    "url": "https://www.nav.no/kontor/nav-hasvik",
+    "location": {
+      "lat": 70.484645,
+      "lng": 22.1637076
+    },
+    "formatted_address": "Storgata 1, 9590 Hasvik, Norway"
+  },
+  "Sauda": {
+    "hitString": "SAUDASJØEN",
+    "name": "Nav Sauda",
+    "geoId": "1135",
+    "enhetNr": "1135",
+    "url": "https://www.nav.no/kontor/nav-sauda",
+    "location": {
+      "lat": 59.64922629999999,
+      "lng": 6.3572961
+    },
+    "formatted_address": "Brugata 2, 4200 Sauda, Norway"
+  },
+  "Aukra": {
+    "hitString": "AUKRA",
+    "name": "Nav Aukra",
+    "geoId": "1547",
+    "enhetNr": "1547",
+    "url": "https://www.nav.no/kontor/nav-aukra",
+    "location": {
+      "lat": 62.80535740000001,
+      "lng": 6.888036199999999
+    },
+    "formatted_address": "Aukraringen 9, 6480 Aukra, Norway"
+  },
+  "Haugesund-Utsira": {
+    "hitString": "RØVÆR",
+    "name": "Nav Haugesund-Utsira",
+    "geoId": "1106",
+    "enhetNr": "1106",
+    "url": "https://www.nav.no/kontor/nav-haugesund-utsira",
+    "location": {
+      "lat": 59.413707,
+      "lng": 5.2730934
+    },
+    "formatted_address": "Øvregata 124, 5527 Haugesund, Norway"
+  },
+  "Vestre Toten": {
+    "hitString": "BØVERBRU",
+    "name": "Nav Vestre Toten",
+    "geoId": "3443",
+    "enhetNr": "0529",
+    "url": "https://www.nav.no/kontor/nav-vestre-toten",
+    "location": {
+      "lat": 60.72547299999999,
+      "lng": 10.608494
+    },
+    "formatted_address": "Kirkevegen 8, 2830 Raufoss, Norway"
+  },
+  "Bø": {
+    "hitString": "BØ I VESTERÅLEN",
+    "name": "Nav Bø",
+    "geoId": "1867",
+    "enhetNr": "1867",
+    "url": "https://www.nav.no/kontor/nav-bo",
+    "location": {
+      "lat": 59.41374039999999,
+      "lng": 9.070046399999999
+    },
+    "formatted_address": "Folkestadvegen 21, 3800 Bø i Telemark, Norway"
+  },
+  "Berlevåg": {
+    "hitString": "BERLEVÅG",
+    "name": "Nav Berlevåg",
+    "geoId": "5630",
+    "enhetNr": "2024",
+    "url": "https://www.nav.no/kontor/nav-berlevag",
+    "location": {
+      "lat": 70.8607012,
+      "lng": 29.0907637
+    },
+    "formatted_address": "Prestegårdsgata 15, 9980 Berlevåg, Norway"
+  },
+  "Båtsfjord": {
+    "hitString": "BÅTSFJORD",
+    "name": "Nav Båtsfjord",
+    "geoId": "5632",
+    "enhetNr": "2028",
+    "url": "https://www.nav.no/kontor/nav-batsfjord",
+    "location": {
+      "lat": 70.6358493,
+      "lng": 29.721772
+    },
+    "formatted_address": "Fomavegen 5, 9990 Båtsfjord, Norway"
+  },
+  "Eidfjord": {
+    "hitString": "ØVRE EIDFJORD",
+    "name": "Nav Eidfjord",
+    "geoId": "4619",
+    "enhetNr": "1232",
+    "url": "https://www.nav.no/kontor/nav-eidfjord",
+    "location": {
+      "lat": 60.4674534,
+      "lng": 7.0699734
+    },
+    "formatted_address": "Simadalsvegen 1, 5783 Eidfjord, Norway"
+  },
+  "Frogner": {
+    "hitString": "OSLO",
+    "name": "Nav Frogner",
+    "geoId": "030105",
+    "enhetNr": "0312",
+    "url": "https://www.nav.no/kontor/nav-frogner",
+    "location": {
+      "lat": 59.91249,
+      "lng": 10.7122245
+    },
+    "formatted_address": "Drammensveien 60, 0271 Oslo, Norway"
+  },
+  "Grorud": {
+    "hitString": "Grorud",
+    "name": "Nav Grorud",
+    "geoId": "030110",
+    "enhetNr": "0328",
+    "url": "https://www.nav.no/kontor/nav-grorud",
+    "location": {
+      "lat": 59.9506034,
+      "lng": 10.8570852
+    },
+    "formatted_address": "Kakkelovnskroken 3, 0954 Oslo, Norway"
+  },
+  "Grünerløkka": {
+    "hitString": "Grünerløkka",
+    "name": "Nav Grünerløkka",
+    "geoId": "030102",
+    "enhetNr": "0315",
+    "url": "https://www.nav.no/kontor/nav-grunerlokka",
+    "location": {
+      "lat": 59.92674659999999,
+      "lng": 10.7693066
+    },
+    "formatted_address": "Marstrandgata 6, 0566 Oslo, Norway"
+  },
+  "Hole": {
+    "hitString": "RØYSE",
+    "name": "Nav Hole",
+    "geoId": "3310",
+    "enhetNr": "0612",
+    "url": "https://www.nav.no/kontor/nav-hole",
+    "location": {
+      "lat": 60.08014839999999,
+      "lng": 10.278416
+    },
+    "formatted_address": "Viksveien 30, 3530 Røyse, Norway"
+  },
+  "Lebesby": {
+    "hitString": "KJØLLEFJORD",
+    "name": "Nav Lebesby",
+    "geoId": "5624",
+    "enhetNr": "2022",
+    "url": "https://www.nav.no/kontor/nav-lebesby",
+    "location": {
+      "lat": 70.94605299999999,
+      "lng": 27.3441817
+    },
+    "formatted_address": "Strandvegen 179, 9790 Kjøllefjord, Norway"
+  },
+  "Lødingen": {
+    "hitString": "LØDINGEN",
+    "name": "Nav Lødingen",
+    "geoId": "1851",
+    "enhetNr": "1851",
+    "url": "https://www.nav.no/kontor/nav-lodingen",
+    "location": {
+      "lat": 68.4147303,
+      "lng": 15.9944037
+    },
+    "formatted_address": "Sjøvegen 14, 8410 Lødingen, Norway"
+  },
+  "Skien": {
+    "hitString": "SKIEN",
+    "name": "Nav Skien",
+    "geoId": "4003",
+    "enhetNr": "0806",
+    "url": "https://www.nav.no/kontor/nav-skien",
+    "location": {
+      "lat": 59.2072812,
+      "lng": 9.6092864
+    },
+    "formatted_address": "Rådhusgata 2, 3717 Skien, Norway"
+  },
+  "Steigen": {
+    "hitString": "ENGELØYA",
+    "name": "Nav Steigen",
+    "geoId": "1848",
+    "enhetNr": "1848",
+    "url": "https://www.nav.no/kontor/nav-steigen",
+    "location": {
+      "lat": 67.7750156,
+      "lng": 15.0135056
+    },
+    "formatted_address": "Øyra 3, 8283 Myklebostad, Norway"
+  },
+  "Ullern": {
+    "hitString": "Ullern",
+    "name": "Nav Ullern",
+    "geoId": "030106",
+    "enhetNr": "0335",
+    "url": "https://www.nav.no/kontor/nav-ullern",
+    "location": {
+      "lat": 59.93386080000001,
+      "lng": 10.6742907
+    },
+    "formatted_address": "Hoffsveien 48, 0377 Oslo, Norway"
+  },
+  "Ulvik": {
+    "hitString": "ULVIK",
+    "name": "Nav Ulvik",
+    "geoId": "4620",
+    "enhetNr": "1233",
+    "url": "https://www.nav.no/kontor/nav-ulvik",
+    "location": {
+      "lat": 60.56794540000001,
+      "lng": 6.914933599999999
+    },
+    "formatted_address": "Skeiesvegen 3, 5730 Ulvik, Norway"
+  },
+  "Vestby": {
+    "hitString": "HØLEN",
+    "name": "Nav Vestby",
+    "geoId": "3216",
+    "enhetNr": "0211",
+    "url": "https://www.nav.no/kontor/nav-vestby",
+    "location": {
+      "lat": 59.6016433,
+      "lng": 10.7490742
+    },
+    "formatted_address": "Rådhusgata 6a, 1540 Vestby, Norway"
+  },
+  "Østensjø": {
+    "hitString": "Østensjø",
+    "name": "Nav Østensjø",
+    "geoId": "030113",
+    "enhetNr": "0321",
+    "url": "https://www.nav.no/kontor/nav-ostensjo",
+    "location": {
+      "lat": 59.8652543,
+      "lng": 10.8413402
+    },
+    "formatted_address": "Olaf Helsets vei 6, 0694 Oslo, Norway"
+  },
+  "Øvre Eiker": {
+    "hitString": "ØVRE EIKER",
+    "name": "Nav Øvre Eiker",
+    "geoId": "3314",
+    "enhetNr": "0624",
+    "url": "https://www.nav.no/kontor/nav-ovre-eiker",
+    "location": {
+      "lat": 59.7692298,
+      "lng": 9.9108247
+    },
+    "formatted_address": "Stasjonsgata 61, 3300 Hokksund, Norway"
+  },
+  "Øyer": {
+    "hitString": "ØYER",
+    "name": "Nav Øyer",
+    "geoId": "3440",
+    "enhetNr": "0521",
+    "url": "https://www.nav.no/kontor/nav-oyer",
+    "location": {
+      "lat": 61.3137894,
+      "lng": 10.3017288
+    },
+    "formatted_address": "Kongsvegen 1553, 2635 Tretten, Norway"
+  },
+  "Åmot": {
+    "hitString": "ÅMOT",
+    "name": "Nav Åmot",
+    "geoId": "3422",
+    "enhetNr": "0429",
+    "url": "https://www.nav.no/kontor/nav-amot",
+    "location": {
+      "lat": 61.1322679,
+      "lng": 11.3731169
+    },
+    "formatted_address": "Torget 1, 2450 Rena, Norway"
+  },
+  "Ås": {
+    "hitString": "ÅS",
+    "name": "Nav Ås",
+    "geoId": "3218",
+    "enhetNr": "0214",
+    "url": "https://www.nav.no/kontor/nav-as",
+    "location": {
+      "lat": 59.6640621,
+      "lng": 10.7923555
+    },
+    "formatted_address": "Moerveien 2, 1430 Ås, Norway"
+  }
+}
