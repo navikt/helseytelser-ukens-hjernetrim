@@ -11,7 +11,7 @@ const weeks = {
   "2026-7" : hjernetrim.GEOGUESSER,
   "2026-8" : hjernetrim.CONNECTIONS,
   "2026-9" : hjernetrim.GEOGUESSER,
-  "2026-9" : hjernetrim.TIMEGUESSER,
+  "2026-10" : hjernetrim.TIMEGUESSER,
 }
 
 const express = require('express');
