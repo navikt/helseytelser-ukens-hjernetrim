@@ -56,7 +56,7 @@ export default function TransitionOverlay({ onNavigate, onComplete }) {
         ref={videoRef}
         src={src}
         className="w-full h-full object-cover"
-        style={{ filter: 'sepia(0.3)' }}
+        style={{ filter: 'sepia(0.4) brightness(0.6)', opacity: 0.6 }}
         playsInline
       />
     </div>

@@ -32,7 +32,7 @@ export default function ResultScreen({ round, guess, yearScore, locationScore, d
       <div className="relative w-[55%] flex flex-col flex-shrink-0 border-r border-stone-800">
 
         {/* Years off — prominent */}
-        <div className="px-10 pt-30 pb-5 border-b border-stone-800">
+        <div className="px-10 pt-20 pb-5 border-b border-stone-800">
           {/* add link from url here */}
           <p className="text-stone-300 text-sm font-medium mb-2 underline">
             Kilde: <a href={round.url} target="_blank" rel="noopener noreferrer" className="text-stone-300 underline">DigitaltMuseum</a>
@@ -52,7 +52,7 @@ export default function ResultScreen({ round, guess, yearScore, locationScore, d
         </div>
 
         {/* Map — fixed height, not full */}
-        <div className="h-200 flex-shrink-0">
+        <div className="h-[60%] flex-shrink-0">
           <GoogleMap
             mapContainerStyle={{ width: '100%', height: '100%' }}
             zoom={3}
