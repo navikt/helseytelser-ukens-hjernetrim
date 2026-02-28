@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@keyframes slide-up {
+  from { transform: translateY(100%); }
+  to   { transform: translateY(0); }
+}
+
+.screen-enter {
+  animation: slide-up 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.warning-vignette {
+  position: fixed;
+  inset: 0;
+  z-index: 24999;
+  pointer-events: none;
+  box-shadow: inset 0 0 120px 60px rgba(200, 0, 0, 0.55);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.warning-vignette.active {
+  opacity: 1;
+  animation: vignette-pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes vignette-pulse {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}

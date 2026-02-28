@@ -1,0 +1,47 @@
+[
+    {
+    "id": 1,
+    "imagePath": "./images/bilde-berg.jpg",
+    "year": 1912,
+    "lat": 60.39499574478108,
+    "lng": 5.325442955862627,
+    "description": "Folkeliv på Fisketorvet i Bergen ved Kjøttbasaren",
+    "url": "https://digitaltmuseum.no/021018739275/prot-bergen-fra-fisketorvet"
+  },
+  {
+    "id": 2,
+    "imagePath": "./images/photo1.jpg",
+    "year": 1995,
+    "lat": 60.920001628622465,
+    "lng": 10.906805117300163,
+    "description": "Kirkekretsen skole deltok i 5 PÅ",
+    "url": "https://digitaltmuseum.no/021018627142/kirkekretsen-skole-deltok-i-5-pa"
+  },
+  {
+    "id": 3,
+    "imagePath": "./images/trondheim.jpg",
+    "year": 1953,
+    "lat": 63.43038668913293, 
+    "lng": 10.39795719326734,
+    "description": "Luftvernartelleriets parade i Trondheim",
+    "url": "https://digitaltmuseum.no/021017127597/luftvernartelleriets-parade"
+  },
+  {
+    "id": 4,
+    "imagePath": "./images/3.jpg",
+    "year": 2003,
+    "lat": 60.5991959008385,
+    "lng": 12.019101081376975,
+    "description": "Åpning av Flisa bru i Åsnes i Hedmark",
+    "url": "https://digitaltmuseum.no/021018341024/flisa-bru-i-asnes-i-hedmark-2003"
+  },
+  {
+    "id": 5,
+    "imagePath": "./images/dolakua.jpg",
+    "year": 2008,
+    "lat": 62.41011044695812,
+    "lng": 10.999483382765382,
+    "description": "150-års jubileum for Dølafeet",
+    "url": "https://digitaltmuseum.no/0210110485487/150-ars-jubileum-for-dolafeet-1-dolakua-ramona-2-rorosku"
+  }
+]
